@@ -10,7 +10,7 @@ public class Conductor : MonoBehaviour
     public float bpm = 120f;
  
     [Tooltip("Segundos desde el inicio del audio hasta el primer beat real.")]
-    public float offsetPrimerBeat = 0f;
+    public float offsetPrimerBeat = 0.81f;
  
     [Tooltip("Margen en segundos antes de que empiece a sonar la música.")]
     public float retrasoInicio = 0f;

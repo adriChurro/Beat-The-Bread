@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conductor
   musica: {fileID: 673834179}
   bpm: 120
-  offsetPrimerBeat: 0
+  offsetPrimerBeat: 0.81
   retrasoInicio: 0
   mostrarTiempo: 1
   clicEnCadaBeat: 1
