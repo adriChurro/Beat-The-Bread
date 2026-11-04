@@ -16,7 +16,7 @@ public class Conductor : MonoBehaviour
     public float retrasoInicio = 0f;
  
     [Header("Depuración")]
-    public bool mostrarTiempo = true;
+    public bool mostrarTiempo = false;
     public bool clicEnCadaBeat = true;
     public AudioSource sonidoClic;
     public AudioClip clic;
@@ -29,7 +29,7 @@ public class Conductor : MonoBehaviour
     int ultimoBeat = -1;
  
     // ---------- Lo que leerán los demás scripts ----------
- 
+
     public double SegundosPorBeat => 60.0 / bpm;
  
     // Segundos de canción. Es negativo antes de que empiece a sonar.
@@ -46,11 +46,6 @@ public class Conductor : MonoBehaviour
     void Awake()
     {
         Instance = this;
-    }
- 
-    void Start()
-    {
-        Iniciar();
     }
  
     public void Iniciar()

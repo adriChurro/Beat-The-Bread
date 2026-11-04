@@ -1,0 +1,81 @@
+using UnityEngine;
+
+// Resumen rápido. Un administrador de juego, que proporciona distintos estados,
+// y los scripst reaccionan y se activan en función de ellos.
+// por ejemplo, si el juego está en pausa, la musica no debe de sonar.
+
+public class AdministradorJuego : MonoBehaviour
+{
+    // Los posibles estados en los que puede estar el juego
+	public enum EstadoJuego
+	{
+		Esperando,
+		Jugando,
+		Admin
+	}
+
+	[Header("Estado Actual")]
+	public EstadoJuego estadoActual = EstadoJuego.Esperando;
+
+	// PONER AQUI LOS SCRIPS QUE UTILICE EL JUEGO
+	[Header("Referencias")]
+	public Conductor conductor;
+	public GrabadorRaton grabadorRaton;
+
+
+	void Start()
+	{
+		Debug.Log("ENTER para jugar. D para debug");
+	}
+
+
+	void Update()
+	{	
+		// Acciones según el estado del juego
+		switch (estadoActual)
+		{
+			case EstadoJuego.Esperando:
+				if (Input.GetKeyDown(KeyCode.Return))
+				{
+					CambiarEstado(EstadoJuego.Jugando);
+				}
+				else if (Input.GetKeyDown(KeyCode.D))
+				{
+					CambiarEstado(EstadoJuego.Admin);
+				}
+				break;
+
+
+			case EstadoJuego.Jugando:
+				// TODO
+				break;
+			
+
+			case EstadoJuego.Admin:
+				if (Input.GetKeyDown(KeyCode.Escape))
+				{
+					CambiarEstado(EstadoJuego.Esperando);
+				}
+				break;
+		}
+	}
+
+	void CambiarEstado(EstadoJuego nuevoEstado)
+	{
+		estadoActual = nuevoEstado;
+
+		if (estadoActual == EstadoJuego.Jugando)
+		{
+			conductor.Iniciar();
+			Debug.Log("Estas Jugando");
+		}
+		else if (estadoActual == EstadoJuego.Admin)
+		{
+			Debug.Log("Estas en modo administrador");
+		}
+		else if (estadoActual == EstadoJuego.Esperando)
+		{
+			Debug.Log("Estas esperando");
+		}
+	}
+}
