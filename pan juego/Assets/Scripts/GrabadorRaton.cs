@@ -29,10 +29,12 @@ public class GrabadorRaton : MonoBehaviour
     public ContenedorClics registro = new ContenedorClics();
     
     [Tooltip("El archivo se guardará en la carpeta Assets de tu proyecto")]
-    public string nombreArchivo = "NivelGrabado.json";
 
     void Update()
     {
+
+        if (AdministradorJuego.Instance == null || AdministradorJuego.Instance.estadoActual != AdministradorJuego.EstadoJuego.Admin) {return;}
+
         if (Input.GetMouseButtonDown(0))
         {
             RegistrarClic();
@@ -67,12 +69,19 @@ public class GrabadorRaton : MonoBehaviour
 
     void GuardarEnJson()
     {
-        // El 'true' final formatea el JSON con saltos de línea para que sea legible por humanos
         string contenidoJson = JsonUtility.ToJson(registro, true);
 
-        // Application.dataPath es tu carpeta "Assets" del proyecto.
-        // Es el mejor sitio durante una Jam para encontrar el archivo rápido.
-        string ruta = Path.Combine(Application.dataPath, nombreArchivo);
+        string rutaCarpeta = Path.Combine(Application.dataPath, "Niveles");
+        string[] archivos = Directory.GetFiles(rutaCarpeta, "*.json");
+        int numeroDeArchivos = archivos.Length;
+        string nombreArchivo = $"NivelGrabado {numeroDeArchivos + 1}.json";
+
+        string ruta = Path.Combine(Application.dataPath, "Niveles" ,nombreArchivo);
+
+        if (!Directory.Exists(rutaCarpeta))
+        {
+            Directory.CreateDirectory(rutaCarpeta);
+        }
 
         File.WriteAllText(ruta, contenidoJson);
         Debug.Log($"<color=green>¡ARCHIVO GUARDADO EN:</color> {ruta}");

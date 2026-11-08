@@ -26,6 +26,7 @@ public class CortadorDireccion : MonoBehaviour
     //El update se ejecuta cada frame
     void Update()
     {
+
         //Comprobamos si empieza a pulsar justo en este frame
         if (PulsadoEsteFrame())
         {
