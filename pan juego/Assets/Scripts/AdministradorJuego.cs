@@ -22,6 +22,7 @@ public class AdministradorJuego : MonoBehaviour
 
 	// PONER AQUI LOS SCRIPS QUE UTILICE EL JUEGO
 	[Header("Referencias")]
+	public LineaTiempo lineaTiempo;
 	public Conductor conductor;
 	public GrabadorRaton grabadorRaton;
 
@@ -83,6 +84,7 @@ public class AdministradorJuego : MonoBehaviour
 
 		if (estadoActual == EstadoJuego.Jugando)
 		{
+			lineaTiempo.CargarNivel(lineaTiempo.nombreArchivoACargar);
 			conductor.Iniciar();
 			Debug.Log("Estas Jugando");
 		}
