@@ -59,12 +59,12 @@ public class CortadorDireccion : MonoBehaviour
             }
 
             //si estas aqui es que si
-            Pan pan = hit.collider.GetComponent<Pan>();
-            //Lo has cortao por donde era??
+            //Pan pan = hit.collider.GetComponent<Pan>();
+            /*//Lo has cortao por donde era??
             if (pan.tipo.direccionCorrecta == dir)
                 Debug.Log($"ACIERTO con {pan.tipo.nombre}");
             else
-                Debug.Log($"FALLO: {pan.tipo.nombre} pedía {pan.tipo.direccionCorrecta} y cortaste {dir}");
+                Debug.Log($"FALLO: {pan.tipo.nombre} pedía {pan.tipo.direccionCorrecta} y cortaste {dir}");*/
         }
     }
 

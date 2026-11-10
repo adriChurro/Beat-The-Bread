@@ -2,21 +2,59 @@ using UnityEngine;
 
 public class Pan : MonoBehaviour
 {
-    public TipoPan tipo;
+    private Animator animator; //Componente animador
+
     public float velocidad = 2f;
 
+    double tiempoObjetivo;
+
+    bool cortado;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (tipo != null) Init(tipo);
+        animator = GetComponent<Animator>();
+    }
+    
+    public void Configurar (double tiempo, float vel)
+    {
+        tiempoObjetivo = tiempo;
+        velocidad = vel;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * velocidad * Time.deltaTime, Space.World); // mueve el pan
+        double t = Conductor.Instance.TiempoCancion;
+
+        // Posición según el reloj de la música (llega a 0 justo en tiempoObjetivo)
+        float x = 0f - (float)((tiempoObjetivo - t) * velocidad);
+
+        // Si se pasa de 0, se queda en 0 y no esta cortado
+        if (!cortado)  x = Mathf.Min(x, 0f);
+    
+        transform.position = new Vector3(x, -2.46f, transform.position.z);
+
+        if (t > tiempoObjetivo + 0.2f && !cortado) Destroy(gameObject);
     }
 
-    public void Init (TipoPan nuevoTipo) {
-        tipo = nuevoTipo;
-        GetComponent<SpriteRenderer>().sprite = tipo.sprite;
+    //si me clicas :)
+    void OnMouseDown()
+    {
+        if (cortado) return;
+
+        double t = Conductor.Instance.TiempoCancion;
+        LineaTiempo.estado resultado = AdministradorJuego.Instance.lineaTiempo.EvaluarTiempo(tiempoObjetivo, t);
+
+        if (resultado == LineaTiempo.estado.Perfecto || resultado == LineaTiempo.estado.Bien)
+        {
+            cortado = true;
+            animator.SetTrigger("Cut");
+        }
+    }
+
+    public void AlTerminarAnimacionCorte() //self explainatory
+    {
+        Destroy(gameObject);
     }
 }

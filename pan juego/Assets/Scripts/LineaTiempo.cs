@@ -36,8 +36,8 @@ public class LineaTiempo : MonoBehaviour
 
 	public estado estadoActual = estado.Desactivado;
 
-	public double margenMal = 0.5;
-	public double margenBien = 0.2;
+	public double margenMal = 0.2;
+	public double margenBien = 0.1;
 	public double margenPerfecto = 0.05;
 
 	[Header("Partida")]
@@ -82,113 +82,119 @@ public class LineaTiempo : MonoBehaviour
 
 	
 	public void ActualizarEstado(double tiempoActual)
-{
-    // Si ya no quedan más clics en el nivel
-    if (indiceClick >= clicsDelNivel.Count) 
     {
-        estadoActual = estado.Desactivado;
-		Camera.main.backgroundColor = Color.black;
-        return;
-    }
-
-    // --- LA SOLUCIÓN: BUSCAR EL BEAT MÁS CERCANO ---
-    // Mientras haya un siguiente beat en la lista...
-    while (indiceClick < clicsDelNivel.Count - 1)
-    {
-        double distanciaAlActual = Math.Abs(clicsDelNivel[indiceClick].tiempoCancion - tiempoActual);
-        double distanciaAlSiguiente = Math.Abs(clicsDelNivel[indiceClick + 1].tiempoCancion - tiempoActual);
-
-        // Si el siguiente beat ya está más cerca de nosotros que el que estábamos mirando,
-        // significa que hemos cruzado el punto medio entre ambos. ¡Avanzamos al siguiente!
-        if (distanciaAlSiguiente < distanciaAlActual)
+        // Si ya no quedan más clics en el nivel
+        if (indiceClick >= clicsDelNivel.Count) 
         {
-            indiceClick++;
-			clicado = false;
+            estadoActual = estado.Desactivado;
+            Camera.main.backgroundColor = Color.black;
+            return;
+        }
+
+        // --- LA SOLUCIÓN: BUSCAR EL BEAT MÁS CERCANO ---
+        // Mientras haya un siguiente beat en la lista...
+        while (indiceClick < clicsDelNivel.Count - 1)
+        {
+            double distanciaAlActual = Math.Abs(clicsDelNivel[indiceClick].tiempoCancion - tiempoActual);
+            double distanciaAlSiguiente = Math.Abs(clicsDelNivel[indiceClick + 1].tiempoCancion - tiempoActual);
+
+            // Si el siguiente beat ya está más cerca de nosotros que el que estábamos mirando,
+            // significa que hemos cruzado el punto medio entre ambos. ¡Avanzamos al siguiente!
+            if (distanciaAlSiguiente < distanciaAlActual)
+            {
+                indiceClick++;
+                clicado = false;
+            }
+            else
+            {
+                // El beat actual sigue siendo el más cercano, paramos de comprobar.
+                break; 
+            }
+        }
+
+        // --- LA EVALUACIÓN ---
+
+        if (clicado)
+        {
+            estadoActual = estado.Desactivado; 
+            return;
+        }
+        double tiempoObjetivo = clicsDelNivel[indiceClick].tiempoCancion;
+        double distancia = Math.Abs(tiempoObjetivo - tiempoActual);
+        
+
+        // Evaluamos los márgenes sobre el beat correcto
+        if (distancia <= margenPerfecto)
+        {
+            estadoActual = estado.Perfecto;
+            Camera.main.backgroundColor = Color.gold;
+        }
+        else if (distancia <= margenBien)
+        {
+            estadoActual = estado.Bien;
+            Camera.main.backgroundColor = Color.green;
+        }
+        else if (distancia <= margenMal)
+        {
+            estadoActual = estado.Mal;
+            Camera.main.backgroundColor = Color.brown;
         }
         else
         {
-            // El beat actual sigue siendo el más cercano, paramos de comprobar.
-            break; 
+            estadoActual = estado.Desactivado;
+            Camera.main.backgroundColor = Color.black;
+            
+            // Si el beat más cercano ya se nos ha pasado del todo por no hacer clic (Miss / Fallo)
+            if (tiempoActual > tiempoObjetivo + margenMal)
+            {
+                indiceClick++; 
+                clicado = false;
+            }
         }
     }
-
-    // --- LA EVALUACIÓN ---
-
-	if (clicado)
-    {
-        estadoActual = estado.Desactivado; 
-        return;
-    }
-    double tiempoObjetivo = clicsDelNivel[indiceClick].tiempoCancion;
-    double distancia = Math.Abs(tiempoObjetivo - tiempoActual);
-	
-
-    // Evaluamos los márgenes sobre el beat correcto
-    if (distancia <= margenPerfecto)
-    {
-        estadoActual = estado.Perfecto;
-		Camera.main.backgroundColor = Color.gold;
-    }
-    else if (distancia <= margenBien)
-    {
-        estadoActual = estado.Bien;
-		Camera.main.backgroundColor = Color.green;
-    }
-    else if (distancia <= margenMal)
-    {
-        estadoActual = estado.Mal;
-		Camera.main.backgroundColor = Color.brown;
-    }
-    else
-    {
-        estadoActual = estado.Desactivado;
-		Camera.main.backgroundColor = Color.black;
-        
-        // Si el beat más cercano ya se nos ha pasado del todo por no hacer clic (Miss / Fallo)
-        if (tiempoActual > tiempoObjetivo + margenMal)
-        {
-            indiceClick++; 
-			clicado = false;
-        }
-    }
-}
 
 	void Update()
-{
-    if (Conductor.Instance != null)
     {
-        ActualizarEstado(Conductor.Instance.TiempoCancion);
+        if (Conductor.Instance != null)
+        {
+            ActualizarEstado(Conductor.Instance.TiempoCancion);
+        }
+
+        // Solo procesamos el input si la nota actual NO ha sido clicada aún
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            if (!clicado) {
+
+                if (estadoActual == estado.Perfecto || estadoActual == estado.Bien || estadoActual == estado.Mal)
+                {
+                    // Bloqueamos la nota para el resto de su duración temporal
+                    clicado = true; 
+                    
+                    // Evaluamos la puntuación
+                    if (estadoActual == estado.Perfecto) {Debug.Log("Perfecto!"); puntuacion += 10;}
+                    else if (estadoActual == estado.Bien) {Debug.Log("Bien!"); puntuacion += 2;}
+                    else if (estadoActual == estado.Mal) {Debug.Log("Mal..."); puntuacion -= 4;}
+                }
+                else if (estadoActual == estado.Desactivado)
+                {
+                    Debug.Log("Spam / Fuera de ritmo");
+                }
+
+            }
+            else {
+                puntuacion -= 4;
+            }
+        }
     }
 
-    // Solo procesamos el input si la nota actual NO ha sido clicada aún
-    if (Input.GetMouseButtonDown(0))
+    public estado EvaluarTiempo(double tiempoObjetivo, double tiempoActual)
     {
+        double distancia = Math.Abs(tiempoObjetivo - tiempoActual);
 
-		if (!clicado) {
-
-			if (estadoActual == estado.Perfecto || estadoActual == estado.Bien || estadoActual == estado.Mal)
-			{
-				// Bloqueamos la nota para el resto de su duración temporal
-				clicado = true; 
-				
-				// Evaluamos la puntuación
-				if (estadoActual == estado.Perfecto) {Debug.Log("Perfecto!"); puntuacion += 10;}
-				else if (estadoActual == estado.Bien) {Debug.Log("Bien!"); puntuacion += 2;}
-				else if (estadoActual == estado.Mal) {Debug.Log("Mal..."); puntuacion -= 4;}
-			}
-			else if (estadoActual == estado.Desactivado)
-			{
-				Debug.Log("Spam / Fuera de ritmo");
-			}
-
-		}
-		else {
-			puntuacion -= 4;
-		}
-
-        
+        if (distancia <= margenPerfecto) return estado.Perfecto;
+        if (distancia <= margenBien)     return estado.Bien;
+        if (distancia <= margenMal)      return estado.Mal;
+        return estado.Desactivado;       // demasiado pronto o tarde
     }
-}
-
-	
 }

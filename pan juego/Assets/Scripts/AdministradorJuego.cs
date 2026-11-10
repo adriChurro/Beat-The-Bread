@@ -25,6 +25,7 @@ public class AdministradorJuego : MonoBehaviour
 	public LineaTiempo lineaTiempo;
 	public Conductor conductor;
 	public GrabadorRaton grabadorRaton;
+	public GeneradorPan generadorPan; 
 
 
 	void Start()
