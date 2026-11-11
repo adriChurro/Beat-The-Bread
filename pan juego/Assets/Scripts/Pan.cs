@@ -36,15 +36,9 @@ public class Pan : MonoBehaviour
         // Si se pasa de 0, se queda en 0 y no esta cortado
         if (!cortado)  x = Mathf.Min(x, 0f);
     
-        transform.position = new Vector3(x, -3.35f, transform.position.z);
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
         if (t > tiempoObjetivo + 0.1 && !cortado) Destroy(gameObject);
-    }
-
-    void LateUpdate()
-    {
-        if (demostracion)
-            transform.localScale = Vector3.one;
     }
 
     //si me clicas :)
@@ -59,6 +53,7 @@ public class Pan : MonoBehaviour
         {
             cortado = true;
             animator.SetTrigger("Cut");
+            gameObject.GetComponent<IdleBeat>().activo = false;
         }
     }
 

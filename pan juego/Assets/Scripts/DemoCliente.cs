@@ -46,7 +46,8 @@ public class DemoCliente : MonoBehaviour
         actual = Instantiate(panPrefab, transform.position + Vector3.up * offsetY, Quaternion.identity);
         
         actual.GetComponent<Animator>().SetTrigger("Cut");
-        actual.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+        actual.transform.localScale = new Vector3(1f, 1f, 1f);
         actual.GetComponent<Pan>().demostracion = true;
+        actual.GetComponent<IdleBeat>().activo = false;
     }
 }
