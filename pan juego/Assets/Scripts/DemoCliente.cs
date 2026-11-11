@@ -65,7 +65,7 @@ public class DemoCliente : MonoBehaviour
 
         if (remplazarAnterior && actual != null) Destroy(actual);
 
-        actual = Instantiate(tipo.panPrefab, posBase + Vector3.up * offsetY, Quaternion.identity);
+        actual = Instantiate(tipo.panPrefab, posBase + Vector3.up * offsetY +  Vector3.right * 5f, Quaternion.identity);
         
         actual.GetComponent<Animator>().SetTrigger("Cut");
         actual.transform.localScale = new Vector3(1f, 1f, 1f);
