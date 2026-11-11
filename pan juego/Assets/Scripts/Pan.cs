@@ -9,6 +9,7 @@ public class Pan : MonoBehaviour
     double tiempoObjetivo;
 
     bool cortado;
+    public bool demostracion;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +26,8 @@ public class Pan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(demostracion == true) return;
+
         double t = Conductor.Instance.TiempoCancion;
 
         // Posición según el reloj de la música (llega a 0 justo en tiempoObjetivo)
@@ -33,15 +36,21 @@ public class Pan : MonoBehaviour
         // Si se pasa de 0, se queda en 0 y no esta cortado
         if (!cortado)  x = Mathf.Min(x, 0f);
     
-        transform.position = new Vector3(x, -2.46f, transform.position.z);
+        transform.position = new Vector3(x, -3.35f, transform.position.z);
 
-        if (t > tiempoObjetivo + 0.2f && !cortado) Destroy(gameObject);
+        if (t > tiempoObjetivo + 0.1 && !cortado) Destroy(gameObject);
+    }
+
+    void LateUpdate()
+    {
+        if (demostracion)
+            transform.localScale = Vector3.one;
     }
 
     //si me clicas :)
     void OnMouseDown()
     {
-        if (cortado) return;
+        if (cortado) return; // si ya esta cortado no entra
 
         double t = Conductor.Instance.TiempoCancion;
         LineaTiempo.estado resultado = AdministradorJuego.Instance.lineaTiempo.EvaluarTiempo(tiempoObjetivo, t);

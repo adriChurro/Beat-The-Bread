@@ -40,7 +40,7 @@ public class GeneradorPan : MonoBehaviour
 
     void Generar(DatosClic clic)
     {
-        Vector2 posInicial = new Vector2(0, -2.46f) + Vector2.left * distanciaSpawn; // cambiar y algo mas general
+        Vector2 posInicial = new Vector2(0, -3.35f) + Vector2.left * distanciaSpawn; // cambiar y algo mas general
         GameObject pan = Instantiate(panPrefab, posInicial, Quaternion.identity);
 
         pan.GetComponent<Pan>().Configurar(clic.tiempoCancion, velocidadPan);
