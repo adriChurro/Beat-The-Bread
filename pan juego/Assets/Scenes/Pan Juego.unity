@@ -476,7 +476,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GeneradorPan
   lineaTiempo: {fileID: 1940573470}
   panPrefab: {fileID: 6716378149744332435, guid: 1dfde4007ab4f6e4cb286ae9acecb13e, type: 3}
-  tipos: []
+  tipos:
+  - {fileID: 11400000, guid: b812a5373b0f2f14fad7b2cfe51fb08c, type: 2}
+  - {fileID: 11400000, guid: 7520456e6b8126748aa2ef0c4a320f89, type: 2}
+  - {fileID: 11400000, guid: 24a85854775a36e41a6da1a0251a8e26, type: 2}
   velocidadPan: 20
   distanciaSpawn: 8
 --- !u!4 &592526595
@@ -742,6 +745,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1154995606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154995608}
+  - component: {fileID: 1154995607}
+  m_Layer: 0
+  m_Name: DetectorMouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1154995607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154995606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25134afc9515ad54285aae50c734fcba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectorMouse
+  distanciaMinima: 0.5
+  tolerancia: 22.5
+--- !u!4 &1154995608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154995606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.52705, y: -0.8496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193667628
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,12 +1005,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DemoCliente
   lineaTiempo: {fileID: 1940573470}
-  tipos: []
   panPrefab: {fileID: 5480060892569242354, guid: ea243f34caf7e294abc06d20b243b97f, type: 3}
-  offsetY: 4.5
+  generador: {fileID: 592526594}
   adelantoBeats: 4
   tiempoHastaCorte: 0
-  remplazarAnterior: 0
+  remplazarAnterior: 1
+  offsetY: 4.5
 --- !u!1 &1889951910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LineaTiempo
   clicsDelNivel: []
-  nombreArchivoACargar: NivelGrabado_3.json
+  nombreArchivoACargar: NivelGrabado_4.json
   margenMal: 0.2
   margenBien: 0.1
   margenPerfecto: 0.01
@@ -1069,6 +1118,7 @@ SceneRoots:
   - {fileID: 493281214}
   - {fileID: 1940573469}
   - {fileID: 592526595}
+  - {fileID: 1154995608}
   - {fileID: 85896042}
   - {fileID: 1380104060}
   - {fileID: 1193667630}

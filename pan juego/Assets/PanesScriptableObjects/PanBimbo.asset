@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PanBimbo
   m_EditorClassIdentifier: Assembly-CSharp::TipoPan
   nombre: PanBimbo
-  panPrefab: {fileID: 0}
+  panPrefab: {fileID: 5480060892569242354, guid: ea243f34caf7e294abc06d20b243b97f, type: 3}
   direccionCorrecta: 0

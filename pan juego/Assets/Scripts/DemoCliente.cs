@@ -5,14 +5,16 @@ public class DemoCliente : MonoBehaviour
 {
     [Header("Referencias")]
     public LineaTiempo lineaTiempo;
-    public TipoPan[] tipos;
     public GameObject panPrefab;
-    public float offsetY = 4f;
+    public GeneradorPan generador;
 
     [Header("Configuración")]
     public float adelantoBeats = 4f;
     public float tiempoHastaCorte = 0f;
     public bool remplazarAnterior = true;
+    public float offsetY = 4f;
+
+    Vector3 posBase;
 
     int siguiente;
     bool activo = true;
@@ -21,7 +23,7 @@ public class DemoCliente : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        posBase = transform.position;
     }
 
     // Update is called once per frame
@@ -41,9 +43,11 @@ public class DemoCliente : MonoBehaviour
 
     void Lanzar (DatosClic clic)
     {
+        TipoPan tipo = generador.porDireccion[clic.direccion];
+
         if (remplazarAnterior && actual != null) Destroy(actual);
 
-        actual = Instantiate(panPrefab, transform.position + Vector3.up * offsetY, Quaternion.identity);
+        actual = Instantiate(tipo.panPrefab, posBase + Vector3.up * offsetY, Quaternion.identity);
         
         actual.GetComponent<Animator>().SetTrigger("Cut");
         actual.transform.localScale = new Vector3(1f, 1f, 1f);

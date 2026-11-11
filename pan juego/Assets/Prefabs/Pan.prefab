@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5095565835184723694}
   - component: {fileID: 3989420645395013244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CortadorSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171255433252578615}
   - component: {fileID: 7542892339909188562}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CorteSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 2794512103513613098}
   - component: {fileID: 6459349131879445663}
   - component: {fileID: 3873927785317926270}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IdleBeat
   amplitud: 0.08
   beatsPorCiclo: 1
+  activo: 0
 --- !u!1 &5915781367842886980
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5368846648857828422}
   - component: {fileID: 8370622928886401664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

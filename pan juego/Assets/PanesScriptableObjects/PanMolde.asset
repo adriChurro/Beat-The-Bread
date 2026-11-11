@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PanMolde
   m_EditorClassIdentifier: Assembly-CSharp::TipoPan
   nombre: PanMolde
-  panPrefab: {fileID: 0}
+  panPrefab: {fileID: 6716378149744332435, guid: 1dfde4007ab4f6e4cb286ae9acecb13e, type: 3}
   direccionCorrecta: 1

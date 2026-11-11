@@ -11,14 +11,20 @@ public class Pan : MonoBehaviour
     bool resuelto;
     public bool demostracion;
 
+    DireccionCorte direccionCorrecta;
+    public DireccionCorte DireccionCorrecta => direccionCorrecta;
+    public double TiempoObjetivo => tiempoObjetivo;
+    public bool Resuelto => resuelto;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
     }
     
-    public void Configurar (double tiempo, float vel)
+    public void Configurar (DireccionCorte dir, double tiempo, float vel)
     {
+        direccionCorrecta = dir;
         tiempoObjetivo = tiempo;
         velocidad = vel;
     }
@@ -50,26 +56,21 @@ public class Pan : MonoBehaviour
         }
     }
 
-    //si me clicas :)
-    void OnMouseDown()
+    // El detector ya puntuó; aquí solo se reacciona
+    public void Cortar()
     {
-        //Vamos a it filtrando casos
-        if (resuelto || demostracion) return; // si ya esta cortado no entra
-
-        LineaTiempo lt = AdministradorJuego.Instance.lineaTiempo;
-        LineaTiempo.estado resultado = lt.EvaluarTiempo(tiempoObjetivo, Conductor.Instance.TiempoCancion);
-
-        if (resultado == LineaTiempo.estado.Desactivado) return; // demasiado pronto: se ignora
-  
         resuelto = true;
-        lt.RegistrarResultado(resultado);
-
-        if (resultado == LineaTiempo.estado.Mal) return; // penaliza y no se corta
-
         cortado = true;
         animator.SetTrigger("Cut");
-        gameObject.GetComponent<IdleBeat>().activo = false;
+
+        IdleBeat idle = GetComponent<IdleBeat>();
+        if (idle != null) idle.activo = false;
     }
 
-    public void AlTerminarAnimacionCorte() =>  Destroy(gameObject); //self explainatory
+    public void Fallar()
+    {
+        resuelto = true; // ya puntuado; seguirá hasta desaparecer pasado margenMal
+    }
+
+    public void AlTerminarAnimacionCorte() => Destroy(gameObject);
 }

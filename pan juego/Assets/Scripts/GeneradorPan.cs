@@ -12,8 +12,21 @@ public class GeneradorPan : MonoBehaviour
     public float velocidadPan = 4f;
     public float distanciaSpawn = 8f;
 
+    public Dictionary<DireccionCorte, TipoPan> porDireccion;
     int siguiente; //El click por el que vamos
     bool activo = true;
+
+    void Awake()
+    {
+        porDireccion = new Dictionary<DireccionCorte, TipoPan>();
+        foreach (TipoPan t in tipos)
+        {
+            if (porDireccion.ContainsKey(t.direccionCorrecta))
+                Debug.LogWarning($"Hay dos TipoPan con la dirección {t.direccionCorrecta}: se usa el primero.");
+            else
+                porDireccion.Add(t.direccionCorrecta, t);
+        }
+    }
 
     public void Iniciar()
     {
@@ -40,9 +53,11 @@ public class GeneradorPan : MonoBehaviour
 
     void Generar(DatosClic clic)
     {
-        Vector2 posInicial = new Vector2(0, -3.35f) + Vector2.left * distanciaSpawn; // cambiar y algo mas general
-        GameObject pan = Instantiate(panPrefab, posInicial, Quaternion.identity);
+        TipoPan tipo = porDireccion[clic.direccion];
 
-        pan.GetComponent<Pan>().Configurar(clic.tiempoCancion, velocidadPan);
+        Vector2 posInicial = new Vector2(0, -3.35f) + Vector2.left * distanciaSpawn; // cambiar y algo mas general
+        GameObject pan = Instantiate(tipo.panPrefab, posInicial, Quaternion.identity);
+
+        pan.GetComponent<Pan>().Configurar(tipo.direccionCorrecta, clic.tiempoCancion, velocidadPan);
     }
 }
