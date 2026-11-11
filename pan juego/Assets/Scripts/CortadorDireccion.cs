@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public enum DireccionCorte
 {
+    Click,
     Vertical,
     Horizontal,
     DiagonalA, // "/"

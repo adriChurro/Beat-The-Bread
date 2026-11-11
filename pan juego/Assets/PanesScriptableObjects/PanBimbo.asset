@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: PanBimbo
   m_EditorClassIdentifier: Assembly-CSharp::TipoPan
   nombre: PanBimbo
-  sprite: {fileID: 3605096474675693062, guid: fa373626e025a494a8ee82776d989e31, type: 3}
+  panPrefab: {fileID: 0}
   direccionCorrecta: 0
-  cortes: 1

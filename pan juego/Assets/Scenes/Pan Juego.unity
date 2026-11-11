@@ -441,6 +441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbdd6a9c6d04854db60ec4130157a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrabadorRaton
+  distanciaMinima: 0.5
+  tolerancia: 22.5
   registro:
     listaClics: []
 --- !u!1 &592526593
@@ -1050,13 +1052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d349193758d6ed049adefe5da97c7f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LineaTiempo
-  indiceClick: 0
-  clicado: 0
-  tiempoParaSiguienteCambio: 0
   clicsDelNivel: []
-  nombreArchivoACargar: NivelGrabado 2.json
-  estadoActual: 0
-  margenMal: 1
+  nombreArchivoACargar: NivelGrabado_3.json
+  margenMal: 0.2
   margenBien: 0.1
   margenPerfecto: 0.01
   puntuacion: 0

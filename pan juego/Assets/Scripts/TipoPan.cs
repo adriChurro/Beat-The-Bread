@@ -4,7 +4,6 @@ using UnityEngine;
 public class TipoPan : ScriptableObject
 {
     public string nombre;
-    public Sprite sprite;
+    public GameObject panPrefab;
     public DireccionCorte direccionCorrecta;
-    public int cortes;
 }
