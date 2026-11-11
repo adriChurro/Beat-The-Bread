@@ -8,7 +8,6 @@ public class DemoCliente : MonoBehaviour
     public LineaTiempo lineaTiempo;
     public GameObject panPrefab;
     public GeneradorPan generador;
-    public SpriteRenderer spriteCliente;   // el sprite que cambia (puede ser un hijo)
     public Sprite[] clientes;
 
     [Header("Configuración")]
@@ -27,19 +26,22 @@ public class DemoCliente : MonoBehaviour
     public float duracionEntrada = 0.12f;
     public bool entraPorIzquierda = false; // false: vuelve desde la derecha, true: aparece desde la izquierda
 
+    SpriteRenderer spriteCliente;
+
     Vector3 posBase;
+    GameObject actual;
 
     int siguiente;
     bool activo = true;
-    GameObject actual;
     int indiceSprite;
     bool cambiando;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         posBase = transform.position;
         Conductor.Instance.AlCambiarBeat += OnBeat;
+        spriteCliente = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
