@@ -52,7 +52,7 @@ public class Pan : MonoBehaviour
                 resuelto = true;
                 lt.RegistrarResultado(LineaTiempo.estado.Desactivado);
             }
-            Destroy(gameObject);
+            animator.SetTrigger("Fallo");
         }
     }
 

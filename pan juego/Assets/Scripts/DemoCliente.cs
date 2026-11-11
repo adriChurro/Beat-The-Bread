@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class DemoCliente : MonoBehaviour
@@ -7,6 +8,8 @@ public class DemoCliente : MonoBehaviour
     public LineaTiempo lineaTiempo;
     public GameObject panPrefab;
     public GeneradorPan generador;
+    public SpriteRenderer spriteCliente;   // el sprite que cambia (puede ser un hijo)
+    public Sprite[] clientes;
 
     [Header("Configuración")]
     public float adelantoBeats = 4f;
@@ -14,16 +17,29 @@ public class DemoCliente : MonoBehaviour
     public bool remplazarAnterior = true;
     public float offsetY = 4f;
 
+    [Header("Ritmo")]
+    public int beatsPorCambio = 8;         // 2 compases de 4/4
+    public int beatsCuentaInicial = 4;
+
+    [Header("Movimiento")]
+    public float distanciaFuera = 12f;     // cuánto se aleja hacia la derecha (fuera de cámara)
+    public float duracionSalida = 0.12f;
+    public float duracionEntrada = 0.12f;
+    public bool entraPorIzquierda = false; // false: vuelve desde la derecha, true: aparece desde la izquierda
+
     Vector3 posBase;
 
     int siguiente;
     bool activo = true;
     GameObject actual;
+    int indiceSprite;
+    bool cambiando;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         posBase = transform.position;
+        Conductor.Instance.AlCambiarBeat += OnBeat;
     }
 
     // Update is called once per frame
@@ -53,5 +69,54 @@ public class DemoCliente : MonoBehaviour
         actual.transform.localScale = new Vector3(1f, 1f, 1f);
         actual.GetComponent<Pan>().demostracion = true;
         actual.GetComponent<IdleBeat>().activo = false;
+    }
+
+    void OnBeat(int beat)
+    {
+
+        if (beat > beatsCuentaInicial &&
+            (beat - beatsCuentaInicial) % beatsPorCambio == 0 &&
+            !cambiando)
+        {
+            StartCoroutine(Cambiar());
+        }
+    }
+
+    IEnumerator Cambiar()
+    {
+        cambiando = true;
+        Vector3 derecha = posBase + Vector3.right * distanciaFuera;
+        Vector3 izquierda = posBase + Vector3.left * distanciaFuera;
+
+        // 1. Sale rápido hacia la derecha (aceleración)
+        yield return Mover(posBase, derecha, duracionSalida, true);
+
+        // 2. Cambia el sprite fuera de cámara
+        if (clientes.Length > 0)
+        {
+            indiceSprite = (indiceSprite + 1) % clientes.Length;
+            spriteCliente.sprite = clientes[indiceSprite];
+        }
+
+        // 3. Vuelve al centro rápido (frenada)
+        Vector3 origen = entraPorIzquierda ? izquierda : derecha;
+        yield return Mover(origen, posBase, duracionEntrada, false);
+
+        transform.position = posBase;
+        cambiando = false;
+    }
+
+    IEnumerator Mover(Vector3 desde, Vector3 hasta, float duracion, bool acelerar)
+    {
+        float t = 0f;
+        while (t < duracion)
+        {
+            t += Time.deltaTime;
+            float k = Mathf.Clamp01(t / duracion);
+            k = acelerar ? k * k : 1f - (1f - k) * (1f - k); // ease-in al salir, ease-out al entrar
+            transform.position = Vector3.LerpUnclamped(desde, hasta, k);
+            yield return null;
+        }
+        transform.position = hasta;
     }
 }
