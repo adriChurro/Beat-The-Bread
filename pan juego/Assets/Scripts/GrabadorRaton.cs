@@ -1,20 +1,22 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
-
-//Resumen rápido. Primero vamos nosotros manualmente al ritmo de la musica ha hacer 
-// lo que queramos que haga el jugador, y lo vamos a guardar en un archivo json. 
-// despues lo leemos y lo comparamos con lo que ha hecho el jugador.
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class DatosClic
 {
-    public float posicionX;
-    public float posicionY;
+    public Tipo tipo;
+    public Vector2 posicion;
+    public Vector2 trazo;
+    public DireccionCorte direccion;
     public double tiempoCancion;
+    public double tiempoCancionFinal;
     public double beat;
+    public double beatFinal;
 }
 
+public enum Tipo { Click, Corte, Arrastre }
 
 [System.Serializable]
 public class ContenedorClics
@@ -22,41 +24,72 @@ public class ContenedorClics
     public List<DatosClic> listaClics = new List<DatosClic>();
 }
 
-
-
 public class GrabadorRaton : MonoBehaviour
 {
-    public ContenedorClics registro = new ContenedorClics();
-    
-    [Tooltip("El archivo se guardará en la carpeta Assets de tu proyecto")]
+    [Tooltip("Distancia mínima (en unidades de mundo) para considerar que es un corte y no un click.")]
+    public float distanciaMinima = 0.5f;
 
+    [Tooltip("Margen de ángulo (en grados) alrededor de cada dirección. 22.5 = 4 zonas iguales.")]
+    [Range(10f, 30f)]
+    public float tolerancia = 22.5f;
+
+    public ContenedorClics registro = new ContenedorClics();
+    Vector2 inicio;
+    Vector2 fin;
+    Vector2 trazo; // Esta es la variable global
+    double tiempoCancionInicio;
+    double tiempoCancionFinal;  
+    double beatInicio;
+    double beatFinal;
+    bool arrastrando;
+    
     void Update()
     {
-
         if (AdministradorJuego.Instance == null || AdministradorJuego.Instance.estadoActual != AdministradorJuego.EstadoJuego.Admin) {return;}
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            RegistrarClic();
-        }
-
-        // Si pulsas la tecla G, confirmamos y guardamos el archivo
+        // 1. Movemos la tecla G arriba del todo para que nunca sea bloqueada por el ratón
         if (Input.GetKeyDown(KeyCode.G))
         {
             GuardarEnJson();
+        }
+
+        if (PulsadoEsteFrame())
+        {
+            inicio = PosicionMundo();
+            arrastrando = true;
+            tiempoCancionInicio = Conductor.Instance.TiempoCancion;
+            beatInicio = Conductor.Instance.BeatActual;
+        }
+
+        // Si no estamos soltando el ratón en este frame, salimos del Update (no pasa nada con la G porque ya la comprobamos arriba)
+        if (!(arrastrando && SoltadoEsteFrame())) return;
+
+        arrastrando = false;
+        fin = PosicionMundo();
+
+        // 2. Quitamos el "Vector2" delante para actualizar la variable global correcta
+        trazo = fin - inicio; 
+        
+        if (trazo.magnitude < distanciaMinima) 
+        {
+            RegistrarClic();
+        }
+        else
+        {
+            tiempoCancionFinal = Conductor.Instance.TiempoCancion;
+            beatFinal = Conductor.Instance.BeatActual;
+            RegistrarCorte();
         }
     }
 
     void RegistrarClic()
     {
-        // Cogemos la posición del ratón en la pantalla (píxeles)
-        Vector3 posRaton = Input.mousePosition; 
+        Vector2 posRaton = Input.mousePosition; 
         
         DatosClic nuevoClic = new DatosClic();
-        nuevoClic.posicionX = posRaton.x;
-        nuevoClic.posicionY = posRaton.y;
+        nuevoClic.tipo = Tipo.Click;
+        nuevoClic.posicion = posRaton;
 
-        // Si el Conductor está sonando, guardamos los datos rítmicos
         if (Conductor.Instance != null)
         {
             nuevoClic.tiempoCancion = Conductor.Instance.TiempoCancion;
@@ -67,23 +100,75 @@ public class GrabadorRaton : MonoBehaviour
         Debug.Log($"Clic guardado. Total en memoria: {registro.listaClics.Count}");
     }
 
+    void RegistrarCorte()
+    {
+        DatosClic nuevoCorte = new DatosClic();
+        nuevoCorte.tipo = Tipo.Corte;
+        nuevoCorte.posicion = inicio;
+        nuevoCorte.trazo = trazo;
+        nuevoCorte.direccion = Clasificar(trazo);
+        nuevoCorte.tiempoCancion = tiempoCancionInicio;
+        nuevoCorte.tiempoCancionFinal = tiempoCancionFinal;
+        nuevoCorte.beat = beatInicio;
+        nuevoCorte.beatFinal = beatFinal;
+
+        registro.listaClics.Add(nuevoCorte);
+        Debug.Log($"Corte guardado. Total en memoria: {registro.listaClics.Count}");
+    }
+
     void GuardarEnJson()
     {
-        string contenidoJson = JsonUtility.ToJson(registro, true);
-
         string rutaCarpeta = Path.Combine(Application.dataPath, "Niveles");
-        string[] archivos = Directory.GetFiles(rutaCarpeta, "*.json");
-        int numeroDeArchivos = archivos.Length;
-        string nombreArchivo = $"NivelGrabado {numeroDeArchivos + 1}.json";
-
-        string ruta = Path.Combine(Application.dataPath, "Niveles" ,nombreArchivo);
-
+        
+        // 3. PRIMERO comprobamos si existe la carpeta y la creamos
         if (!Directory.Exists(rutaCarpeta))
         {
             Directory.CreateDirectory(rutaCarpeta);
         }
 
+        // 4. AHORA contamos los archivos
+        string[] archivos = Directory.GetFiles(rutaCarpeta, "*.json");
+        int numeroDeArchivos = archivos.Length;
+        
+        string nombreArchivo = $"NivelGrabado_{numeroDeArchivos + 1}.json"; // Añadido un guion bajo para no dejar espacios en blanco
+        string ruta = Path.Combine(rutaCarpeta, nombreArchivo);
+
+        string contenidoJson = JsonUtility.ToJson(registro, true);
         File.WriteAllText(ruta, contenidoJson);
+        
         Debug.Log($"<color=green>¡ARCHIVO GUARDADO EN:</color> {ruta}");
+    }
+
+    bool PulsadoEsteFrame()
+    {
+        return Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+    }
+
+    bool SoltadoEsteFrame()
+    {
+        return Mouse.current != null && Mouse.current.leftButton.wasReleasedThisFrame;
+    }
+
+    Vector2 PosicionMundo()
+    {
+        Vector2 pantalla = Mouse.current.position.ReadValue();
+        return Camera.main.ScreenToWorldPoint(pantalla);
+    }
+
+    public DireccionCorte Clasificar(Vector2 trazo)
+    {
+        float ang = AnguloNormalizado(trazo);
+
+        if (ang < tolerancia || ang >= 180f - tolerancia) return DireccionCorte.Horizontal;
+        if (Mathf.Abs(ang - 90f) < tolerancia) return DireccionCorte.Vertical;
+        return ang < 90f ? DireccionCorte.DiagonalA : DireccionCorte.DiagonalB;
+    }
+
+    float AnguloNormalizado(Vector2 d)
+    {
+        float ang = Mathf.Atan2(d.y, d.x) * Mathf.Rad2Deg;
+        if (ang < 0f) ang += 180f; 
+        if (ang >= 180f) ang -= 180f; 
+        return ang;
     }
 }
