@@ -5,6 +5,10 @@ using System;
 
 public class LineaTiempo : MonoBehaviour
 {
+    [Header("Referencias")]
+    public GameObject popUp;
+    public Sprite[] spritesPopUp;
+ 
     [Header("Datos Cargados")]
     public List<DatosClic> clicsDelNivel = new List<DatosClic>();
 
@@ -53,12 +57,33 @@ public class LineaTiempo : MonoBehaviour
     // Único sitio donde se suman puntos. Lo llama el pan.
     public void RegistrarResultado(estado resultado)
     {
+        // Antes de que empiece la canción no se puntúa
+        if (Conductor.Instance == null || !Conductor.Instance.Sonando) return;
+
         switch (resultado)
         {
-            case estado.Perfecto: puntuacion += 10; Debug.Log("Perfecto!"); break;
-            case estado.Bien:     puntuacion += 2;  Debug.Log("Bien!");     break;
-            case estado.Mal:      puntuacion -= 4;  Debug.Log("Mal...");    break;
-            case estado.Desactivado: puntuacion -= 4; Debug.Log("Fallo (pan sin cortar)"); break;
+            case estado.Perfecto: 
+                puntuacion += 10; 
+                Debug.Log("Perfecto!"); 
+                popUp.GetComponent<SpriteRenderer>().sprite = spritesPopUp[0];
+                break;
+            case estado.Bien:     
+                puntuacion += 2;  
+                Debug.Log("Bien!");  
+                popUp.GetComponent<SpriteRenderer>().sprite = spritesPopUp[1];   
+                break;
+            case estado.Mal:      
+                puntuacion -= 4;  
+                Debug.Log("Mal..."); 
+                popUp.GetComponent<SpriteRenderer>().sprite = spritesPopUp[2];   
+                break;
+            case estado.Desactivado: 
+                puntuacion -= 4; 
+                Debug.Log("Fallo (pan sin cortar)"); 
+                popUp.GetComponent<SpriteRenderer>().sprite = spritesPopUp[3];
+                break;
         }
+
+        popUp.GetComponent<Animator>().SetTrigger("Pop");
     }
 }

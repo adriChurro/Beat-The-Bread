@@ -40,6 +40,8 @@ public class Conductor : MonoBehaviour
  
     public double BeatATiempo(double beat) => offsetPrimerBeat + beat * SegundosPorBeat;
     public double TiempoABeat(double tiempo) => (tiempo - offsetPrimerBeat) / SegundosPorBeat;
+
+    public bool Sonando => iniciado && TiempoCancion >= 0;
  
     // ---------- Ciclo de vida ----------
  
