@@ -79,7 +79,7 @@ public class AdministradorJuego : MonoBehaviour
 		}
 	}
 
-	void CambiarEstado(EstadoJuego nuevoEstado)
+	public void CambiarEstado(EstadoJuego nuevoEstado)
 	{
 		estadoActual = nuevoEstado;
 

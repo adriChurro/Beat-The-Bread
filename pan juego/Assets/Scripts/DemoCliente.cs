@@ -35,13 +35,20 @@ public class DemoCliente : MonoBehaviour
     bool activo = true;
     int indiceSprite;
     bool cambiando;
-    
+    bool nivelTerminado;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         posBase = transform.position;
         Conductor.Instance.AlCambiarBeat += OnBeat;
         spriteCliente = GetComponent<SpriteRenderer>();
+        Conductor.Instance.AlEmpezarCancion += EmpezarCambio;
+    }
+
+    void EmpezarCambio()
+    {
+        StartCoroutine(Cambiar());
     }
 
     // Update is called once per frame
@@ -57,6 +64,9 @@ public class DemoCliente : MonoBehaviour
             Lanzar(clics[siguiente]);
             siguiente++;
         }
+
+        if (Conductor.Instance.TiempoCancion > TiempoUltimoRitmo() + lineaTiempo.margenMal)
+            StartCoroutine(Despedir());
     }
 
     void Lanzar (DatosClic clic)
@@ -75,6 +85,10 @@ public class DemoCliente : MonoBehaviour
 
     void OnBeat(int beat)
     {
+        if (nivelTerminado || cambiando) return;
+
+        // Pasado el último ritmo, no entra ningún cliente nuevo
+        if (Conductor.Instance.TiempoCancion > TiempoUltimoRitmo()) return;
 
         if (beat > beatsCuentaInicial &&
             (beat - beatsCuentaInicial) % beatsPorCambio == 0 &&
@@ -82,6 +96,16 @@ public class DemoCliente : MonoBehaviour
         {
             StartCoroutine(Cambiar());
         }
+    }
+
+    IEnumerator Despedir()
+    {
+        nivelTerminado = true;
+        cambiando = true;
+
+        // Sale hacia la derecha igual que en un cambio, pero ya no vuelve
+        yield return Mover(posBase, posBase + Vector3.right * distanciaFuera, duracionSalida, true);
+        spriteCliente.enabled = false;
     }
 
     IEnumerator Cambiar()
@@ -120,5 +144,11 @@ public class DemoCliente : MonoBehaviour
             yield return null;
         }
         transform.position = hasta;
+    }
+
+    double TiempoUltimoRitmo()
+    {
+        var clics = lineaTiempo.clicsDelNivel;
+        return clics.Count == 0 ? 0 : clics[clics.Count - 1].tiempoCancion + lineaTiempo.margenMal;
     }
 }

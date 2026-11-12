@@ -23,10 +23,13 @@ public class Conductor : MonoBehaviour
  
     // Se dispara una vez por cada beat entero (0, 1, 2...)
     public event Action<int> AlCambiarBeat;
+    public event Action AlTerminarCancion;
+    public event Action AlEmpezarCancion;
  
     double inicioDsp;
     bool iniciado;
     int ultimoBeat = -1;
+    bool finalizado;
  
     // ---------- Lo que leerán los demás scripts ----------
 
@@ -42,6 +45,8 @@ public class Conductor : MonoBehaviour
     public double TiempoABeat(double tiempo) => (tiempo - offsetPrimerBeat) / SegundosPorBeat;
 
     public bool Sonando => iniciado && TiempoCancion >= 0;
+    // true cuando el audio ya ha llegado a su final
+    public bool CancionTerminada => iniciado && musica.clip != null && TiempoCancion >= musica.clip.length;
  
     // ---------- Ciclo de vida ----------
  
@@ -56,6 +61,7 @@ public class Conductor : MonoBehaviour
         musica.PlayScheduled(inicioDsp);
         ultimoBeat = -1;
         iniciado = true;
+        AlEmpezarCancion?.Invoke();
     }
  
     void Update()
@@ -72,6 +78,12 @@ public class Conductor : MonoBehaviour
  
             if (clicEnCadaBeat && sonidoClic != null && clic != null)
                 sonidoClic.PlayOneShot(clic);
+        }
+
+        if (!finalizado && musica.clip != null && TiempoCancion >= musica.clip.length)
+        {
+            finalizado = true;
+            AlTerminarCancion?.Invoke();
         }
     }
  
