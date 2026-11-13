@@ -517,6 +517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GestorSonido
   fuente: {fileID: 421417510}
   pop: {fileID: 8300000, guid: abd95e3d9821ed34db3f350887dac48d, type: 3}
+  win: {fileID: 8300000, guid: d7f8a12de27c6af4e933d184dcc817b5, type: 3}
+  loose: {fileID: 8300000, guid: 8f4e43bb2f9f8b040ade79ce8a4f29af, type: 3}
   variacionPitch: 0
 --- !u!4 &421417509
 Transform:
@@ -1144,7 +1146,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: cc9062f226c312e4faa94daf3eb86513, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2b528e6f80273b84b836be0fb659fb80, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1899,8 +1901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25134afc9515ad54285aae50c734fcba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectorMouse
-  distanciaMinima: 0.5
-  tolerancia: 22.5
+  distanciaMinima: 0.25
+  tolerancia: 45
 --- !u!4 &1154995608
 Transform:
   m_ObjectHideFlags: 0
@@ -2916,7 +2918,7 @@ MonoBehaviour:
   - {fileID: 6664896983341410308, guid: b46aee55ea0a8aa41b6af1e437483c08, type: 3}
   - {fileID: 6664896983341410308, guid: b46aee55ea0a8aa41b6af1e437483c08, type: 3}
   clicsDelNivel: []
-  nombreArchivoACargar: NivelGrabado_Groove.json
+  nombreArchivoACargar: NivelGrabado_Panrock_110.json
   margenMal: 0.2
   margenBien: 0.1
   margenPerfecto: 0.01

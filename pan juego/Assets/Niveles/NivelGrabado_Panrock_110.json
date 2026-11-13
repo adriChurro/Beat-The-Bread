@@ -1,0 +1,2212 @@
+{
+  "listaClics": [
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 2.1818181818181817,
+      "tiempoCancionFinal": 0.0,
+      "beat": 4.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 2.4545454545454546,
+      "tiempoCancionFinal": 0.0,
+      "beat": 4.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 3.5454545454545454,
+      "tiempoCancionFinal": 0.0,
+      "beat": 6.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 3.8181818181818183,
+      "tiempoCancionFinal": 0.0,
+      "beat": 7.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 6.545454545454546,
+      "tiempoCancionFinal": 0.0,
+      "beat": 12.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 6.818181818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 12.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 7.909090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 14.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 8.181818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 15.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 10.909090909090908,
+      "tiempoCancionFinal": 0.0,
+      "beat": 20.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 11.181818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 20.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 11.454545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 21.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 11.727272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 21.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 12.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 22.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 12.272727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 22.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 12.545454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 23.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 15.272727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 15.454545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.333333333333332,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 15.636363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.666666666666668,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 16.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 29.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 16.363636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 30.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 16.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 31.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 19.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 36.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 20.727272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 38.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 21.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 38.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 21.545454545454547,
+      "tiempoCancionFinal": 0.0,
+      "beat": 39.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 24.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 44.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 24.272727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 44.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 24.545454545454547,
+      "tiempoCancionFinal": 0.0,
+      "beat": 45.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 24.818181818181817,
+      "tiempoCancionFinal": 0.0,
+      "beat": 45.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 25.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 46.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 25.363636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 46.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 25.636363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 47.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 25.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 47.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 28.363636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 52.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 28.636363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 52.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 28.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 53.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 29.181818181818183,
+      "tiempoCancionFinal": 0.0,
+      "beat": 53.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 29.454545454545453,
+      "tiempoCancionFinal": 0.0,
+      "beat": 54.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 29.727272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 54.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 30.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 55.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 30.272727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 55.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 32.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 60.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 33.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 60.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 33.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 61.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 33.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 61.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 33.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 62.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 62.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.36363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 63.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 37.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 68.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 37.36363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 68.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 37.63636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 37.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 38.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.66666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 38.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 70.16666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 70.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 71.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 39.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 71.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 41.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 76.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 41.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 76.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 42.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 42.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 42.40909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 42.77272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 78.41666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 42.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 78.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 43.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 79.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 43.36363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 79.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 45.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 84.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 46.09090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 84.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 46.36363636363637,
+      "tiempoCancionFinal": 0.0,
+      "beat": 85.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 46.63636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 85.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 46.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 86.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 47.18181818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 86.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 47.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 87.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 50.18181818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 92.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 50.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 92.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 50.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 51.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 51.13636363636363,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 51.40909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 94.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 51.55681818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 94.52083333333333,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 51.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 95.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 54.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 100.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 54.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 100.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 55.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 102.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 56.18181818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 103.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 58.90909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 108.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 59.18181818181818,
+      "tiempoCancionFinal": 0.0,
+      "beat": 108.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 60.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 110.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 60.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 111.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 63.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 116.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 63.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 116.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 63.81818181818182,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 64.0909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 64.22727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 64.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 118.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 64.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 118.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 64.9090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 119.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 67.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 124.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 67.9090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 124.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 68.18181818181819,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 68.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 68.5909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 68.86363636363636,
+      "tiempoCancionFinal": 0.0,
+      "beat": 126.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 69.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 126.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 69.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 127.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 69.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 127.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 72.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 132.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 72.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 132.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 72.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 133.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 72.81818181818181,
+      "tiempoCancionFinal": 0.0,
+      "beat": 133.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 73.0909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 134.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 73.36363636363636,
+      "tiempoCancionFinal": 0.0,
+      "beat": 134.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 73.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 135.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 73.9090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 135.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 76.36363636363636,
+      "tiempoCancionFinal": 0.0,
+      "beat": 140.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 76.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 140.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 76.9090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 141.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 77.18181818181819,
+      "tiempoCancionFinal": 0.0,
+      "beat": 141.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 77.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 142.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 77.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 142.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 78.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 143.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 78.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 143.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 80.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 148.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 81.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 148.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 81.27272727272727,
+      "tiempoCancionFinal": 0.0,
+      "beat": 149.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 81.54545454545455,
+      "tiempoCancionFinal": 0.0,
+      "beat": 149.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 81.81818181818181,
+      "tiempoCancionFinal": 0.0,
+      "beat": 150.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 82.0909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 150.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 82.36363636363636,
+      "tiempoCancionFinal": 0.0,
+      "beat": 151.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 82.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 151.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 85.0909090909091,
+      "tiempoCancionFinal": 0.0,
+      "beat": 156.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 85.36363636363636,
+      "tiempoCancionFinal": 0.0,
+      "beat": 156.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 85.63636363636364,
+      "tiempoCancionFinal": 0.0,
+      "beat": 157.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 85.9090909090909,
+      "tiempoCancionFinal": 0.0,
+      "beat": 157.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 86.18181818181819,
+      "tiempoCancionFinal": 0.0,
+      "beat": 158.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 86.45454545454545,
+      "tiempoCancionFinal": 0.0,
+      "beat": 158.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 86.72727272727273,
+      "tiempoCancionFinal": 0.0,
+      "beat": 159.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 87.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 159.5,
+      "beatFinal": 0.0
+    }
+  ]
+}

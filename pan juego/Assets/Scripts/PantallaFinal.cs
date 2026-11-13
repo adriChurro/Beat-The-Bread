@@ -39,8 +39,6 @@ public class PantallaFinal : MonoBehaviour
 
         textoVeredicto.text = apto ? textoApto : textoNoApto;
 
-        
-
         GetComponent<Animator>().SetTrigger("Fin");
     }
 
@@ -59,5 +57,17 @@ public class PantallaFinal : MonoBehaviour
     public void SonarPop()
     {
         GestorSonido.Instance.Reproducir(GestorSonido.Instance.pop);
+    }
+
+    public void SonarWinLoose()
+    {
+        if (apto) 
+        {
+            GestorSonido.Instance.Reproducir(GestorSonido.Instance.win);
+        }
+        else
+        {
+            GestorSonido.Instance.Reproducir(GestorSonido.Instance.loose);
+        }
     }
 }

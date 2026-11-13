@@ -9,6 +9,8 @@ public class GestorSonido : MonoBehaviour
 
     [Header("Clips")]
     public AudioClip pop;
+    public AudioClip win;
+    public AudioClip loose;
 
     [Header("Variación")]
     [Range(0f, 0.2f)] public float variacionPitch = 0.05f;

@@ -5,7 +5,7 @@ public class DetectorMouse : MonoBehaviour
 {
     [Header("Configuración")]
     public float distanciaMinima = 0.5f;   // por debajo es un clic, por encima un corte
-    [Range(10f, 30f)] public float tolerancia = 22.5f;
+    [Range(10f, 45f)] public float tolerancia = 22.5f;
 
     Vector2 inicio, fin;
     double tiempoInicio;

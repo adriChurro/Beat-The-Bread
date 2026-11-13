@@ -1,0 +1,2212 @@
+{
+  "listaClics": [
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 2.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 4.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 2.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 4.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 3.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 6.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 3.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 7.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 6.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 12.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 6.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 12.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 7.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 14.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 7.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 15.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 10.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 20.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 10.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 20.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 10.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 21.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 10.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 21.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 11.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 22.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 11.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 22.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 11.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 23.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 14.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 14.166666666666666,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.333333333333332,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 14.333333333333334,
+      "tiempoCancionFinal": 0.0,
+      "beat": 28.666666666666668,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 14.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 29.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 15.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 30.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 15.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 31.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 18.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 36.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 19.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 38.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 19.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 38.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 19.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 39.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 22.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 44.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 22.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 44.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 22.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 45.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 22.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 45.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 23.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 46.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 23.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 46.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 23.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 47.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 23.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 47.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 26.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 52.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 26.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 52.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 26.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 53.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 26.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 53.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 27.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 54.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 27.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 54.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 27.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 55.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 27.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 55.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 30.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 60.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 30.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 60.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 30.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 61.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 30.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 61.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 31.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 62.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 31.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 62.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 31.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 63.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 68.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 68.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 34.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 34.833333333333336,
+      "tiempoCancionFinal": 0.0,
+      "beat": 69.66666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 35.083333333333336,
+      "tiempoCancionFinal": 0.0,
+      "beat": 70.16666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 35.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 70.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 35.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 71.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 35.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 71.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 76.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 76.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 38.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 38.875,
+      "tiempoCancionFinal": 0.0,
+      "beat": 77.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 39.208333333333336,
+      "tiempoCancionFinal": 0.0,
+      "beat": 78.41666666666667,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 39.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 78.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 39.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 79.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 39.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 79.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 42.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 84.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 42.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 84.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 42.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 85.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 42.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 85.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 43.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 86.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 43.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 86.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 43.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 87.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 46.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 92.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 46.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 92.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 46.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 46.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 46.875,
+      "tiempoCancionFinal": 0.0,
+      "beat": 93.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 47.125,
+      "tiempoCancionFinal": 0.0,
+      "beat": 94.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 47.260416666666664,
+      "tiempoCancionFinal": 0.0,
+      "beat": 94.52083333333333,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 47.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 95.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 50.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 100.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 50.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 100.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 51.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 102.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 51.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 103.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 54.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 108.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 54.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 108.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 55.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 110.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 55.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 111.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 58.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 116.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 58.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 116.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 58.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 58.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 58.875,
+      "tiempoCancionFinal": 0.0,
+      "beat": 117.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 59.125,
+      "tiempoCancionFinal": 0.0,
+      "beat": 118.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 59.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 118.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 59.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 119.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 62.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 124.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 62.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 124.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 62.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 62.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 62.875,
+      "tiempoCancionFinal": 0.0,
+      "beat": 125.75,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 63.125,
+      "tiempoCancionFinal": 0.0,
+      "beat": 126.25,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 63.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 126.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 63.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 127.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 63.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 127.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 66.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 132.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 66.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 132.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 66.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 133.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 66.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 133.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 67.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 134.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 67.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 134.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 67.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 135.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 67.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 135.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 70.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 140.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 70.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 140.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 70.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 141.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 70.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 141.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 71.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 142.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 71.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 142.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 71.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 143.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 71.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 143.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 74.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 148.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 74.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 148.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 74.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 149.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 74.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 149.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 75.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 150.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 75.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 150.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 75.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 151.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 75.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 151.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 78.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 156.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 78.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 156.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 78.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 157.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 2,
+      "tiempoCancion": 78.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 157.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 79.0,
+      "tiempoCancionFinal": 0.0,
+      "beat": 158.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 79.25,
+      "tiempoCancionFinal": 0.0,
+      "beat": 158.5,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 1,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 1,
+      "tiempoCancion": 79.5,
+      "tiempoCancionFinal": 0.0,
+      "beat": 159.0,
+      "beatFinal": 0.0
+    },
+    {
+      "tipo": 0,
+      "posicion": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "trazo": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "direccion": 0,
+      "tiempoCancion": 79.75,
+      "tiempoCancionFinal": 0.0,
+      "beat": 159.5,
+      "beatFinal": 0.0
+    }
+  ]
+}
