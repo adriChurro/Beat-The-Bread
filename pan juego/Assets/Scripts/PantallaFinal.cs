@@ -49,6 +49,11 @@ public class PantallaFinal : MonoBehaviour
         reiniciar.SetActive(true);
     }
 
+    public void siguienteNivel()
+    {
+        SceneManager.LoadScene("Nivel2");
+    }
+
     public void reiniciarNivel () 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

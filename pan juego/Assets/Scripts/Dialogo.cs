@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogo : MonoBehaviour
 {
@@ -13,7 +14,17 @@ public class Dialogo : MonoBehaviour
 
     void Start()
     {
-        TextAsset archivo = Resources.Load<TextAsset>("Nivel1");
+        string nivel = "";
+        switch(SceneManager.GetActiveScene().name)
+        {
+            case "Nivel1":
+                nivel = "Nivel1";
+                break;
+            case "Nivel2":
+                nivel = "Nivel2";
+                break;
+        }
+        TextAsset archivo = Resources.Load<TextAsset>(nivel);
 
         frases = archivo.text.Split('\n');
 

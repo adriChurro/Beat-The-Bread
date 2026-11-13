@@ -1903,6 +1903,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DetectorMouse
   distanciaMinima: 0.25
   tolerancia: 45
+  prefabTajo: {fileID: 5277116695593181482, guid: e15fde9d8813d2f409067cdda166e759, type: 3}
+  colorTajoAcierto: {r: 1, g: 1, b: 1, a: 1}
+  colorTajoFallo: {r: 1, g: 0.4, b: 0.4, a: 1}
 --- !u!4 &1154995608
 Transform:
   m_ObjectHideFlags: 0

@@ -7,6 +7,11 @@ public class DetectorMouse : MonoBehaviour
     public float distanciaMinima = 0.5f;   // por debajo es un clic, por encima un corte
     [Range(10f, 45f)] public float tolerancia = 22.5f;
 
+    [Header("Corte visual")]
+    public TajoVisual prefabTajo;
+    public Color colorTajoAcierto = Color.white;
+    public Color colorTajoFallo = new Color(1f, 0.4f, 0.4f);
+
     Vector2 inicio, fin;
     double tiempoInicio;
     bool arrastrando;
@@ -47,6 +52,13 @@ public class DetectorMouse : MonoBehaviour
             : Clasificar(trazo);
 
         Debug.DrawLine(inicio, fin, Color.red, 1f);
+
+        //Dibujar tajo
+        if (accion != DireccionCorte.Click)
+        {
+            TajoVisual tajo = Instantiate(prefabTajo);
+            tajo.Mostrar(inicio, fin, colorTajoAcierto);
+        }
 
         // 2. ¿Qué pan hay bajo el gesto?
         Pan pan = BuscarPan(accion);

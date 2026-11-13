@@ -54,7 +54,7 @@ public class AdministradorJuego : MonoBehaviour
 		switch (estadoActual)
 		{
 			case EstadoJuego.Esperando:
-				if (Input.GetKeyDown(KeyCode.Return))
+				/*if (Input.GetKeyDown(KeyCode.Return))
 				{
 					CambiarEstado(EstadoJuego.Jugando);
 				}
@@ -62,7 +62,7 @@ public class AdministradorJuego : MonoBehaviour
 				{
 					CambiarEstado(EstadoJuego.Admin);
 				}
-				break;
+				break;*/
 
 
 			case EstadoJuego.Jugando:
