@@ -26,6 +26,7 @@ public class AdministradorJuego : MonoBehaviour
 	public Conductor conductor;
 	public GrabadorRaton grabadorRaton;
 	public GeneradorPan generadorPan; 
+	public MusicaMenu musicaMenu;
 
 
 	void Start()
@@ -85,6 +86,7 @@ public class AdministradorJuego : MonoBehaviour
 
 		if (estadoActual == EstadoJuego.Jugando)
 		{
+			musicaMenu.Parar();
 			lineaTiempo.CargarNivel(lineaTiempo.nombreArchivoACargar);
 			conductor.Iniciar();
 			Debug.Log("Estas Jugando");
@@ -96,6 +98,7 @@ public class AdministradorJuego : MonoBehaviour
 		}
 		else if (estadoActual == EstadoJuego.Esperando)
 		{
+			musicaMenu.Sonar();
 			Debug.Log("Estas esperando");
 		}
 	}

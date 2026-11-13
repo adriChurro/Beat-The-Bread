@@ -17,28 +17,30 @@ public class LineaTiempo : MonoBehaviour
 
     public enum estado { Desactivado, Mal, Bien, Perfecto }
 
-    public double margenMal = 0.2;
-    public double margenBien = 0.1;
-    public double margenPerfecto = 0.05;
+    public double margenMal;
+    public double margenBien;
+    public double margenPerfecto;
 
     [Header("Partida")]
     public int puntuacion = 0;
 
     public void CargarNivel(string nombreArchivo)
     {
-        string ruta = Path.Combine(Application.dataPath, "Niveles", nombreArchivo);
+        // Resources.Load pide el nombre SIN extensión y sin la carpeta "Resources"
+        string nombre = Path.GetFileNameWithoutExtension(nombreArchivo);
+        TextAsset archivo = Resources.Load<TextAsset>("Niveles/" + nombre);
 
-        if (!File.Exists(ruta))
+        if (archivo == null)
         {
-            Debug.LogError($"No se encontró el archivo de nivel en: {ruta}");
+            Debug.LogError($"No se encontró el nivel 'Niveles/{nombre}' en Resources");
             return;
         }
 
-        ContenedorClics datos = JsonUtility.FromJson<ContenedorClics>(File.ReadAllText(ruta));
+        ContenedorClics datos = JsonUtility.FromJson<ContenedorClics>(archivo.text);
         if (datos != null)
         {
             clicsDelNivel = datos.listaClics;
-            Debug.Log($"Nivel cargado. Total de clics: {clicsDelNivel.Count}");
+            Debug.Log($"Nivel cargado ({nombre}). Total de clics: {clicsDelNivel.Count}");
         }
     }
 

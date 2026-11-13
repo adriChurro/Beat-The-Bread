@@ -79,9 +79,9 @@ public class DetectorMouse : MonoBehaviour
         // 4. ¿Interacción correcta?
         if (accion != pan.DireccionCorrecta)
         {
-            Debug.Log($"Interacción incorrecta: pedía {pan.DireccionCorrecta}, hiciste {accion}");
+            /*Debug.Log($"Interacción incorrecta: pedía {pan.DireccionCorrecta}, hiciste {accion}");
             lt.RegistrarResultado(LineaTiempo.estado.Mal);
-            pan.Fallar();
+            pan.Fallar();*/
             return;
         }
 

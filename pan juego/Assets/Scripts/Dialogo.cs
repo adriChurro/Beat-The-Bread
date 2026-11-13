@@ -23,6 +23,9 @@ public class Dialogo : MonoBehaviour
             case "Nivel2":
                 nivel = "Nivel2";
                 break;
+            case "Nivel3":
+                nivel = "Nivel3";
+                break;
         }
         TextAsset archivo = Resources.Load<TextAsset>(nivel);
 

@@ -1,14 +1,16 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class DemoCliente : MonoBehaviour
 {
     [Header("Referencias")]
     public LineaTiempo lineaTiempo;
     public GameObject panPrefab;
-    public GameObject Bocadillo;
+    public GameObject bocadillo;
     public GeneradorPan generador;
+    public GameObject clienteSprite;
     public Sprite[] clientes;
 
     [Header("Configuración")]
@@ -27,6 +29,10 @@ public class DemoCliente : MonoBehaviour
     public float duracionEntrada = 0.12f;
     public bool entraPorIzquierda = false; // false: vuelve desde la derecha, true: aparece desde la izquierda
 
+    [Header("Cambio de cliente")]
+    public bool finalBoss = false;
+    public Sprite spriteBoss;
+
     SpriteRenderer spriteCliente;
 
     Vector3 posBase;
@@ -43,8 +49,9 @@ public class DemoCliente : MonoBehaviour
     {
         posBase = transform.position;
         Conductor.Instance.AlCambiarBeat += OnBeat;
-        spriteCliente = GetComponent<SpriteRenderer>();
+        spriteCliente = clienteSprite.GetComponent<SpriteRenderer>();
         Conductor.Instance.AlEmpezarCancion += EmpezarCambio;
+        if (SceneManager.GetActiveScene().name == "Nivel3") finalBoss = true;
     }
 
     void EmpezarCambio()
@@ -66,7 +73,7 @@ public class DemoCliente : MonoBehaviour
             siguiente++;
         }
 
-        if (Conductor.Instance.TiempoCancion > TiempoUltimoRitmo() + lineaTiempo.margenMal)
+        if (!nivelTerminado && Conductor.Instance.TiempoCancion > TiempoUltimoRitmo())
             StartCoroutine(Despedir());
     }
 
@@ -94,13 +101,14 @@ public class DemoCliente : MonoBehaviour
             (beat - beatsCuentaInicial) % beatsPorCambio == 0 &&
             !cambiando)
         {
-            Bocadillo.GetComponent<Animator>().SetTrigger("Aparecer");
-            StartCoroutine(Cambiar());
+            bocadillo.GetComponent<Animator>().SetTrigger("Aparecer");
+
+            if (!finalBoss) StartCoroutine(Cambiar());
         }
 
         if (beat > beatsCuentaInicial && (beat- beatsCuentaInicial - 4) % 8 == 0) 
         {
-            Bocadillo.GetComponent<Animator>().SetTrigger("Desaparecer");
+            bocadillo.GetComponent<Animator>().SetTrigger("Desaparecer");
         }
     }
 
@@ -126,8 +134,16 @@ public class DemoCliente : MonoBehaviour
         // 2. Cambia el sprite fuera de cámara
         if (clientes.Length > 0)
         {
-            indiceSprite = (indiceSprite + 1) % clientes.Length;
-            spriteCliente.sprite = clientes[indiceSprite];
+            if (!finalBoss)
+            {
+                indiceSprite = (indiceSprite + 1) % clientes.Length;
+                spriteCliente.sprite = clientes[indiceSprite];
+            }
+            else
+            {
+                spriteCliente.sprite = spriteBoss;
+            }
+            
         }
         // 3. Vuelve al centro rápido (frenada)
         Vector3 origen = entraPorIzquierda ? izquierda : derecha;
@@ -154,6 +170,6 @@ public class DemoCliente : MonoBehaviour
     double TiempoUltimoRitmo()
     {
         var clics = lineaTiempo.clicsDelNivel;
-        return clics.Count == 0 ? 0 : clics[clics.Count - 1].tiempoCancion + lineaTiempo.margenMal;
+        return clics.Count == 0 ? 0 : clics[clics.Count - 1].tiempoCancion;
     }
 }
