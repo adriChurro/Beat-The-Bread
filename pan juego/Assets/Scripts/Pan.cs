@@ -62,9 +62,6 @@ public class Pan : MonoBehaviour
         resuelto = true;
         cortado = true;
         animator.SetTrigger("Cut");
-
-        IdleBeat idle = GetComponent<IdleBeat>();
-        if (idle != null) idle.activo = false;
     }
 
     public void Fallar()

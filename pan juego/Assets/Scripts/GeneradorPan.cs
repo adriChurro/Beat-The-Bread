@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Rendering;   // para SortingGroup
 
 public class GeneradorPan : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class GeneradorPan : MonoBehaviour
     public Dictionary<DireccionCorte, TipoPan> porDireccion;
     int siguiente; //El click por el que vamos
     bool activo = true;
+    public int ordenBase = 10;     // por encima del fondo, por debajo del cliente/UI
+    int contadorOrden;
 
     void Awake()
     {
@@ -57,6 +60,14 @@ public class GeneradorPan : MonoBehaviour
 
         Vector2 posInicial = new Vector2(0, -3.35f) + Vector2.left * distanciaSpawn; // cambiar y algo mas general
         GameObject pan = Instantiate(tipo.panPrefab, posInicial, Quaternion.identity);
+
+        pan.GetComponent<Pan>().Configurar(tipo.direccionCorrecta, clic.tiempoCancion, velocidadPan);
+
+        SortingGroup grupo = pan.GetComponent<SortingGroup>();
+        if (grupo == null)
+            Debug.LogWarning("El prefab del pan no tiene Sorting Group en la raíz");
+        else
+            grupo.sortingOrder = ordenBase + contadorOrden++;
 
         pan.GetComponent<Pan>().Configurar(tipo.direccionCorrecta, clic.tiempoCancion, velocidadPan);
     }

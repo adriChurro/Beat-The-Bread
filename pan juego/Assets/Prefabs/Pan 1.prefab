@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 6935383641780139586}
   - component: {fileID: 2794512103513613098}
   - component: {fileID: 6459349131879445663}
-  - component: {fileID: 1504865220356475740}
+  - component: {fileID: 7698882882317992090}
   m_Layer: 3
   m_Name: Pan 1
   m_TagString: Untagged
@@ -303,18 +303,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pan
   velocidad: 2
   demostracion: 0
---- !u!114 &1504865220356475740
-MonoBehaviour:
+--- !u!210 &7698882882317992090
+SortingGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5480060892569242354}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9aeccf4330defb4cac23b551099f804, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IdleBeat
-  amplitud: 0.08
-  beatsPorCiclo: 1
-  activo: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0

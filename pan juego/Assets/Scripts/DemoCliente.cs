@@ -7,6 +7,7 @@ public class DemoCliente : MonoBehaviour
     [Header("Referencias")]
     public LineaTiempo lineaTiempo;
     public GameObject panPrefab;
+    public GameObject Bocadillo;
     public GeneradorPan generador;
     public Sprite[] clientes;
 
@@ -69,7 +70,7 @@ public class DemoCliente : MonoBehaviour
             StartCoroutine(Despedir());
     }
 
-    void Lanzar (DatosClic clic)
+    public void Lanzar (DatosClic clic)
     {
         TipoPan tipo = generador.porDireccion[clic.direccion];
 
@@ -80,7 +81,6 @@ public class DemoCliente : MonoBehaviour
         actual.GetComponent<Animator>().SetTrigger("Cut");
         actual.transform.localScale = new Vector3(1f, 1f, 1f);
         actual.GetComponent<Pan>().demostracion = true;
-        actual.GetComponent<IdleBeat>().activo = false;
     }
 
     void OnBeat(int beat)
@@ -94,7 +94,13 @@ public class DemoCliente : MonoBehaviour
             (beat - beatsCuentaInicial) % beatsPorCambio == 0 &&
             !cambiando)
         {
+            Bocadillo.GetComponent<Animator>().SetTrigger("Aparecer");
             StartCoroutine(Cambiar());
+        }
+
+        if (beat > beatsCuentaInicial && (beat- beatsCuentaInicial - 4) % 8 == 0) 
+        {
+            Bocadillo.GetComponent<Animator>().SetTrigger("Desaparecer");
         }
     }
 
@@ -123,7 +129,6 @@ public class DemoCliente : MonoBehaviour
             indiceSprite = (indiceSprite + 1) % clientes.Length;
             spriteCliente.sprite = clientes[indiceSprite];
         }
-
         // 3. Vuelve al centro rápido (frenada)
         Vector3 origen = entraPorIzquierda ? izquierda : derecha;
         yield return Mover(origen, posBase, duracionEntrada, false);

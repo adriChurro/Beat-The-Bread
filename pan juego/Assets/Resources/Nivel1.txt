@@ -1,3 +1,28 @@
-¡Bienvenido a la panadería!
-Hoy tenemos mucho trabajo.
-¡Vamos a empezar!
+Hola!
+Tú debes ser el nuevo, ¿verdad?
+Verás, esta panadería es un tanto...
+¡Distinta!
+En Villa Ritmo hacemos todo al compás.
+Nuestros clientes quieren su pan bien cortado.
+¿No sabes cómo se corta el pan?
+¡No te preocupes!
+¡Para eso estoy yo!
+El pan de barra se corta con un corte horizontal.
+Tendras que dejar pulsado click izquierdo,
+y desplazar el raton de forma horizontal.
+Asi es como se ve:
+/PanBarra
+El pack de pan de molde se corta de forma vertical.
+Tendras que dejar pulsado click izquierdo,
+y desplazar el raton de forma vertical.
+Asi es como se ve:
+/PanMolde
+El pan de molde se corta con clic izquierdo.
+Asi es como se ve:
+/PanBimbo
+Cada pan tiene su propio ritmo.
+Sigue la música y afina el oído.
+¡Que no se te escape ni un golpe!
+Estare aqui para juzgar tu trabajo
+¿Preparado para empezar?
+¡Pues que suene la música!

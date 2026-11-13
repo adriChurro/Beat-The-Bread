@@ -55,4 +55,9 @@ public class PantallaFinal : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void SonarPop()
+    {
+        GestorSonido.Instance.Reproducir(GestorSonido.Instance.pop);
+    }
 }
