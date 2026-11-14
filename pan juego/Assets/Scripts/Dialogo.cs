@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Dialogo : MonoBehaviour
 {
     [SerializeField] private TMP_Text textoDialogo;
-    [SerializeField] private TMP_Text pulsarContinuar;
     [SerializeField] private GameObject imagenRaton;
     public GameObject demoCliente;
 
@@ -48,7 +47,6 @@ public class Dialogo : MonoBehaviour
             {
                 AdministradorJuego.Instance.CambiarEstado(AdministradorJuego.EstadoJuego.Jugando);
                 textoDialogo.gameObject.SetActive(false);
-                pulsarContinuar.gameObject.SetActive(false);
                 imagenRaton.SetActive(false);
                 empezado = true;
             }

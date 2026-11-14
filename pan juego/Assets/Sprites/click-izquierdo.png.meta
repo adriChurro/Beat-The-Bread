@@ -118,12 +118,12 @@ TextureImporter:
       name: click-izquierdo_0
       rect:
         serializedVersion: 2
-        x: 105
-        y: 31
-        width: 302
-        height: 450
+        x: 0
+        y: 0
+        width: 1089
+        height: 1635
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3519297c79cde3a4f9981a34ab9da230
     internalID: 0
     vertices: []
     indices: 
