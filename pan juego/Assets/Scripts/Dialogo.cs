@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Dialogo : MonoBehaviour
 {
     [SerializeField] private TMP_Text textoDialogo;
     [SerializeField] private TMP_Text pulsarContinuar;
+    [SerializeField] private GameObject imagenRaton;
     public GameObject demoCliente;
 
     private string[] frases;
@@ -35,13 +37,16 @@ public class Dialogo : MonoBehaviour
     {
         if (empezado) return;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Se cambia Input.GetKeyDown(KeyCode.Space) por Input.GetMouseButtonDown(0)
+        // El 0 representa el clic izquierdo del ratón.
+        if (Input.GetMouseButtonDown(0))
         {
             if (indice >= frases.Length)
             {
                 AdministradorJuego.Instance.CambiarEstado(AdministradorJuego.EstadoJuego.Jugando);
                 textoDialogo.gameObject.SetActive(false);
                 pulsarContinuar.gameObject.SetActive(false);
+                imagenRaton.SetActive(false);
                 empezado = true;
             }
             MostrarFrase();
