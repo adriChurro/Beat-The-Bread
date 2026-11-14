@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dbca826a53da81e42a2858b419b8cb86
+guid: e323a54ce7c956249bf36272f35b80bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6358632893106136934
-    second: Logotipo graffiti Beat the Bread_0
+      213: -3906549793482376877
+    second: IconoJuego_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Logotipo graffiti Beat the Bread_0
+      name: IconoJuego_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1699
-        height: 926
+        x: 1
+        y: 1180
+        width: 6059
+        height: 3913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a985b4db21991c7a0800000000000000
-      internalID: -6358632893106136934
+      spriteID: 3597b1e19a529c9c0800000000000000
+      internalID: -3906549793482376877
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Logotipo graffiti Beat the Bread_0: -6358632893106136934
+      IconoJuego_0: -3906549793482376877
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

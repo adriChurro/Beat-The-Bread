@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class Dialogo : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class Dialogo : MonoBehaviour
 
         // Se cambia Input.GetKeyDown(KeyCode.Space) por Input.GetMouseButtonDown(0)
         // El 0 representa el clic izquierdo del ratón.
-        if (Input.GetMouseButtonDown(0))
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             if (indice >= frases.Length)
             {
