@@ -46,10 +46,4 @@ Ey ey, no tan rápido, chaval. ¿Cómo pensabas jugar sin saber los controles?
 
 - Sacados de [Pixabay](https://pixabay.com/) (licencia de contenido de Pixabay).
 
-**Equipo**
-
-- Código: ...
-- Arte: ...
-- Diseño: ...
-
 **Motor:** Unity.
