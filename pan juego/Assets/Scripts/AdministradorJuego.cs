@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Resumen rápido. Un administrador de juego, que proporciona distintos estados,
 // y los scripst reaccionan y se activan en función de ellos.
@@ -34,7 +35,6 @@ public class AdministradorJuego : MonoBehaviour
 		Debug.Log("ENTER para jugar. D para debug");
 	}
 
-
 	void Awake()
     {
         if (Instance == null)
@@ -47,7 +47,6 @@ public class AdministradorJuego : MonoBehaviour
             Destroy(gameObject); 
         }
     }
-
 
 	void Update()
 	{	
@@ -67,7 +66,10 @@ public class AdministradorJuego : MonoBehaviour
 
 
 			case EstadoJuego.Jugando:
-				// TODO
+				if (Input.GetKeyDown(KeyCode.Escape))
+				{
+					SceneManager.LoadScene("MainMenu");
+				}
 				break;
 			
 
