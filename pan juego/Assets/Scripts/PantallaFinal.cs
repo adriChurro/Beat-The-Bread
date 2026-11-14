@@ -51,7 +51,21 @@ public class PantallaFinal : MonoBehaviour
 
     public void siguienteNivel()
     {
-        SceneManager.LoadScene("Nivel2");
+        string nivel = "";
+        switch(SceneManager.GetActiveScene().name)
+        {
+            case "Nivel1":
+                nivel = "Nivel2";
+                break;
+            case "Nivel2":
+                nivel = "Nivel3";
+                break;
+            case "Nivel3":
+                nivel = "Nivel3";
+                break;
+        }
+
+        SceneManager.LoadScene(nivel);
     }
 
     public void reiniciarNivel () 

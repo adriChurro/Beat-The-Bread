@@ -8,21 +8,25 @@ public class IdleBeat : MonoBehaviour
 
     Vector3 posBase;
 
-    public bool activo;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         posBase = transform.localPosition;
-        activo = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!activo) return;
+        float fase = 0f;
 
-        float fase = (float) (Conductor.Instance.BeatActual / beatsPorCiclo);
+        if (Conductor.Instance.Sonando)
+        {
+            fase = (float) (Conductor.Instance.BeatActual / beatsPorCiclo);
+        }
+        else
+        {
+            fase = Time.time * 2 / beatsPorCiclo;
+        }
 
         float onda = Mathf.Abs(Mathf.Sin(fase * Mathf.PI)); // bote: toca "suelo" en cada beat
 
