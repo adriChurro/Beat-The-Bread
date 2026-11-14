@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2bbf9c02d794fe542a5edcbc110837a3
+guid: 38732c91227522a498f4f086a795c7d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7985135882274131970
-    second: "Interior de panader\xEDa c\xE1lida y desenfocada - copia_0"
+      213: -3291625127308881624
+    second: BotonJugar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Interior de panader\xEDa c\xE1lida y desenfocada - copia_0"
+      name: BotonJugar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1672
-        height: 153
+        width: 3059
+        height: 1470
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 200dc2227c6e0de60800000000000000
-      internalID: 7985135882274131970
+      spriteID: 8211101f26cc152d0800000000000000
+      internalID: -3291625127308881624
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Interior de panader\xEDa c\xE1lida y desenfocada - copia_0": 7985135882274131970
+      BotonJugar_0: -3291625127308881624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

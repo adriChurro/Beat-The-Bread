@@ -61,7 +61,7 @@ public class PantallaFinal : MonoBehaviour
                 nivel = "Nivel3";
                 break;
             case "Nivel3":
-                nivel = "Nivel3";
+                nivel = "Final";
                 break;
         }
 

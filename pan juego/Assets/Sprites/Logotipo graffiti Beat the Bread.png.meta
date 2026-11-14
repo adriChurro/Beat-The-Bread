@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9e4e03fdd91923b4d9fc616c21104037
+guid: dbca826a53da81e42a2858b419b8cb86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3344311993189603614
-    second: path20_0
+      213: -6358632893106136934
+    second: Logotipo graffiti Beat the Bread_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,89 +102,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: path20_0
+      name: Logotipo graffiti Beat the Bread_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 279
-        height: 334
+        width: 1699
+        height: 926
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e191524f902696e20800000000000000
-      internalID: 3344311993189603614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: path20_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 357
-        width: 279
-        height: 334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 228defead132de14bb10ce7446d32794
-      internalID: 1179118116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: path20_2
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 0
-        width: 279
-        height: 334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11b2a59f5e330f3438df6ae963012f0d
-      internalID: 281464233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: path20_3
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 357
-        width: 279
-        height: 334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfaeefd73c2733b469854c176892e320
-      internalID: -554424556
+      spriteID: a985b4db21991c7a0800000000000000
+      internalID: -6358632893106136934
       vertices: []
       indices: 
       edges: []
@@ -193,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 55fc4bd37376e09418b46710250f98fa
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -203,10 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      path20_0: 3344311993189603614
-      path20_1: 1179118116
-      path20_2: 281464233
-      path20_3: -554424556
+      Logotipo graffiti Beat the Bread_0: -6358632893106136934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
