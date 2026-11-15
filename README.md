@@ -7,8 +7,15 @@ Sin embargo... ¿tienes lo que hay que tener? Lo dudo. ¿Que no me crees? Veamos
 
 Juego de ritmo hecho en 2 semanas para la [Innosoft Gamejam 2026](https://itch.io/jam/innosoft-gamejam-2026). Tema: **"Pan"**.
 
-<!-- Cuando tengas capturas, ponlas aquí: -->
-<!-- ![Captura del juego](docs/captura1.png) -->
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103420" src="https://github.com/user-attachments/assets/82ec902c-2206-4051-ae09-cc0c9696524e" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103414" src="https://github.com/user-attachments/assets/14c7308f-eed5-45a6-aa73-743ab345822d" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103253" src="https://github.com/user-attachments/assets/361b3de6-7a74-4274-a305-dc1b110a6d28" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103249" src="https://github.com/user-attachments/assets/34c3e084-f36b-4cea-919a-661e27ed0d3a" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103236" src="https://github.com/user-attachments/assets/91529017-1b96-46e6-9476-27f2dde04c71" />
+<img width="1919" height="1079" alt="Captura de pantalla 2026-11-15 103539" src="https://github.com/user-attachments/assets/b6f0077a-73df-4dd3-85ae-583647a97802" />
+
+## Aviso
+​¿Qué seria una panadería sin su horno? ¡Pues lo mismo que jugar este juego sin música o ratón! Para una mejor experiencia se recomienda tener activa la música del juego y jugar con ratón.
 
 ## Controles
 
