@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class DetectorMouse : MonoBehaviour
 {
     [Header("Configuración")]
-    public float distanciaMinima = 0.5f;   // por debajo es un clic, por encima un corte
+    public float distanciaMinima = 0.5f; // Cuanto me hace falta desplazarme para cortar
     [Range(10f, 45f)] public float tolerancia = 22.5f;
 
     [Header("Corte visual")]
@@ -45,7 +45,6 @@ public class DetectorMouse : MonoBehaviour
     {
         LineaTiempo lt = AdministradorJuego.Instance.lineaTiempo;
 
-        // 1. ¿Clic o corte?
         Vector2 trazo = fin - inicio;
         DireccionCorte accion = trazo.magnitude < distanciaMinima
             ? DireccionCorte.Click
@@ -60,7 +59,6 @@ public class DetectorMouse : MonoBehaviour
             tajo.Mostrar(inicio, fin, colorTajoAcierto);
         }
 
-        // 2. ¿Qué pan hay bajo el gesto?
         Pan pan = BuscarPan(accion);
         if (pan == null)
         {
@@ -68,7 +66,6 @@ public class DetectorMouse : MonoBehaviour
             return;
         }
 
-        // 3. ¿A tiempo?
         var timing = lt.EvaluarTiempo(pan.TiempoObjetivo, tiempoInicio);
         if (timing == LineaTiempo.estado.Desactivado)
         {
@@ -76,7 +73,7 @@ public class DetectorMouse : MonoBehaviour
             return;
         }
 
-        // 4. ¿Interacción correcta?
+        //Al final no penalizamos por esto el juego es muy complicado
         if (accion != pan.DireccionCorrecta)
         {
             /*Debug.Log($"Interacción incorrecta: pedía {pan.DireccionCorrecta}, hiciste {accion}");
@@ -85,7 +82,6 @@ public class DetectorMouse : MonoBehaviour
             return;
         }
 
-        // 5. Acierto (o Mal por timing)
         lt.RegistrarResultado(timing);
         if (timing == LineaTiempo.estado.Mal) pan.Fallar();
         else pan.Cortar();

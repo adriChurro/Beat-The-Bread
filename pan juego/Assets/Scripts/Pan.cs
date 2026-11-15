@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Pan : MonoBehaviour
 {
-    private Animator animator; //Componente animador
+    private Animator animator;
 
     public float velocidad = 2f;
     double tiempoObjetivo;
@@ -16,7 +16,6 @@ public class Pan : MonoBehaviour
     public double TiempoObjetivo => tiempoObjetivo;
     public bool Resuelto => resuelto;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -29,10 +28,9 @@ public class Pan : MonoBehaviour
         velocidad = vel;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(demostracion == true || Conductor.Instance == null) return;
+        if (demostracion == true || Conductor.Instance == null) return;
 
         double t = Conductor.Instance.TiempoCancion;
 
@@ -64,10 +62,7 @@ public class Pan : MonoBehaviour
         animator.SetTrigger("Cut");
     }
 
-    public void Fallar()
-    {
-        resuelto = true; // ya puntuado; seguirá hasta desaparecer pasado margenMal
-    }
+    public void Fallar() => resuelto = true; // ya puntuado; seguirá hasta desaparecer pasado margenMal
 
     public void AlTerminarAnimacionCorte() => Destroy(gameObject);
 }

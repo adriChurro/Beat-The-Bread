@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class AdministradorJuego : MonoBehaviour
 {
-
 	public static AdministradorJuego Instance { get; private set; }
 
     // Los posibles estados en los que puede estar el juego
@@ -61,8 +60,8 @@ public class AdministradorJuego : MonoBehaviour
 				else if (Input.GetKeyDown(KeyCode.D))
 				{
 					CambiarEstado(EstadoJuego.Admin);
-				}
-				break;*/
+				}*/
+				break;
 
 
 			case EstadoJuego.Jugando:

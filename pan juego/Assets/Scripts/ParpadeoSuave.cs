@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI; // Necesario para modificar elementos de la interfaz
+using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))] // Asegura que el objeto tenga un componente Image
+[RequireComponent(typeof(Image))]
 public class ParpadeoSuave : MonoBehaviour
 {
     [Tooltip("Velocidad a la que la imagen aparece y desaparece")]
@@ -18,7 +18,6 @@ public class ParpadeoSuave : MonoBehaviour
 
     void Start()
     {
-        // Obtenemos la imagen asignada a este mismo objeto
         imagen = GetComponent<Image>();
         colorOriginal = imagen.color;
     }

@@ -26,7 +26,6 @@ public class LineaTiempo : MonoBehaviour
 
     public void CargarNivel(string nombreArchivo)
     {
-        // Resources.Load pide el nombre SIN extensión y sin la carpeta "Resources"
         string nombre = Path.GetFileNameWithoutExtension(nombreArchivo);
         TextAsset archivo = Resources.Load<TextAsset>("Niveles/" + nombre);
 
@@ -56,7 +55,7 @@ public class LineaTiempo : MonoBehaviour
         return estado.Desactivado;
     }
 
-    // Único sitio donde se suman puntos. Lo llama el pan.
+    //puntos
     public void RegistrarResultado(estado resultado)
     {
         // Antes de que empiece la canción no se puntúa

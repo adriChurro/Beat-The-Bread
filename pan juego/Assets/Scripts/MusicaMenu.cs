@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MusicaMenu : MonoBehaviour
 {
-    public AudioSource fuente;          // un AudioSource propio, con el clip del menú y Loop activado
+    public AudioSource fuente;
     public float duracionFundido = 0.5f;
 
     float volumenOriginal;

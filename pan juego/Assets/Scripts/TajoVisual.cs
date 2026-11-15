@@ -29,8 +29,8 @@ public class TajoVisual : MonoBehaviour
         t += Time.deltaTime;
         float k = Mathf.Clamp01(t / duracion);
 
-        lr.widthMultiplier = anchoInicial * (1f - k);            // se estrecha
-        Color c = color; c.a = 1f - k;                           // se desvanece
+        lr.widthMultiplier = anchoInicial * (1f - k); //estrechandose
+        Color c = color; c.a = 1f - k; //desvaneciendose
         lr.startColor = lr.endColor = c;
 
         if (k >= 1f) Destroy(gameObject);

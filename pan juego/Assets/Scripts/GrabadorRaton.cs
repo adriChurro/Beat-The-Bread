@@ -36,7 +36,7 @@ public class GrabadorRaton : MonoBehaviour
     public ContenedorClics registro = new ContenedorClics();
     Vector2 inicio;
     Vector2 fin;
-    Vector2 trazo; // Esta es la variable global
+    Vector2 trazo;
     double tiempoCancionInicio;
     double tiempoCancionFinal;  
     double beatInicio;
@@ -47,7 +47,6 @@ public class GrabadorRaton : MonoBehaviour
     {
         if (AdministradorJuego.Instance == null || AdministradorJuego.Instance.estadoActual != AdministradorJuego.EstadoJuego.Admin) {return;}
 
-        // 1. Movemos la tecla G arriba del todo para que nunca sea bloqueada por el ratón
         if (Input.GetKeyDown(KeyCode.G))
         {
             GuardarEnJson();
@@ -67,7 +66,6 @@ public class GrabadorRaton : MonoBehaviour
         arrastrando = false;
         fin = PosicionMundo();
 
-        // 2. Quitamos el "Vector2" delante para actualizar la variable global correcta
         trazo = fin - inicio; 
         
         if (trazo.magnitude < distanciaMinima) 
@@ -120,17 +118,15 @@ public class GrabadorRaton : MonoBehaviour
     {
         string rutaCarpeta = Path.Combine(Application.dataPath, "Niveles");
         
-        // 3. PRIMERO comprobamos si existe la carpeta y la creamos
         if (!Directory.Exists(rutaCarpeta))
         {
             Directory.CreateDirectory(rutaCarpeta);
         }
 
-        // 4. AHORA contamos los archivos
         string[] archivos = Directory.GetFiles(rutaCarpeta, "*.json");
         int numeroDeArchivos = archivos.Length;
         
-        string nombreArchivo = $"NivelGrabado_{numeroDeArchivos + 1}.json"; // Añadido un guion bajo para no dejar espacios en blanco
+        string nombreArchivo = $"NivelGrabado_{numeroDeArchivos + 1}.json";
         string ruta = Path.Combine(rutaCarpeta, nombreArchivo);
 
         string contenidoJson = JsonUtility.ToJson(registro, true);

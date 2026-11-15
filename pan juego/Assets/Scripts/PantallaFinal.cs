@@ -17,13 +17,11 @@ public class PantallaFinal : MonoBehaviour
 
     bool apto;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Conductor.Instance.AlTerminarCancion += OnFinCancion;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -32,7 +30,7 @@ public class PantallaFinal : MonoBehaviour
     void OnFinCancion ()
     {
         int puntos = lineaTiempo.GetComponent<LineaTiempo>().puntuacion;
-        int maximo = lineaTiempo.GetComponent<LineaTiempo>().clicsDelNivel.Count * 10;          // todo Perfecto
+        int maximo = lineaTiempo.GetComponent<LineaTiempo>().clicsDelNivel.Count * 10;
         float porcentaje = maximo > 0 ? (float)puntos / maximo : 0f;
 
         apto = porcentaje >= porcentajeParaAprobar;
@@ -68,25 +66,15 @@ public class PantallaFinal : MonoBehaviour
         SceneManager.LoadScene(nivel);
     }
 
-    public void reiniciarNivel () 
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void SonarPop()
-    {
-        GestorSonido.Instance.Reproducir(GestorSonido.Instance.pop);
-    }
+    public void reiniciarNivel() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    
+    public void SonarPop() => GestorSonido.Instance.Reproducir(GestorSonido.Instance.pop);
 
     public void SonarWinLoose()
     {
         if (apto) 
-        {
             GestorSonido.Instance.Reproducir(GestorSonido.Instance.win);
-        }
         else
-        {
             GestorSonido.Instance.Reproducir(GestorSonido.Instance.loose);
-        }
     }
 }

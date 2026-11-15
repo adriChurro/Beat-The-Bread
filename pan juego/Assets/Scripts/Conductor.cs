@@ -20,8 +20,8 @@ public class Conductor : MonoBehaviour
     public bool clicEnCadaBeat = true;
     public AudioSource sonidoClic;
     public AudioClip clic;
- 
-    // Se dispara una vez por cada beat entero (0, 1, 2...)
+    
+    //eventos
     public event Action<int> AlCambiarBeat;
     public event Action AlTerminarCancion;
     public event Action AlEmpezarCancion;
@@ -31,14 +31,14 @@ public class Conductor : MonoBehaviour
     int ultimoBeat = -1;
     bool finalizado;
  
-    // ---------- Lo que leerán los demás scripts ----------
+    // === Lo que leerán los demás scripts ===
 
     public double SegundosPorBeat => 60.0 / bpm;
  
     // Segundos de canción. Es negativo antes de que empiece a sonar.
     public double TiempoCancion => iniciado ? AudioSettings.dspTime - inicioDsp : -retrasoInicio;
  
-    // Beat actual con decimales (2.5 = mitad entre el beat 2 y el 3).
+    // Beat actual con decimales
     public double BeatActual => TiempoABeat(TiempoCancion);
  
     public double BeatATiempo(double beat) => offsetPrimerBeat + beat * SegundosPorBeat;
@@ -47,8 +47,6 @@ public class Conductor : MonoBehaviour
     public bool Sonando => iniciado && TiempoCancion >= 0;
     // true cuando el audio ya ha llegado a su final
     public bool CancionTerminada => iniciado && musica.clip != null && TiempoCancion >= musica.clip.length;
- 
-    // ---------- Ciclo de vida ----------
  
     void Awake()
     {
@@ -70,7 +68,6 @@ public class Conductor : MonoBehaviour
  
         int beatEntero = Mathf.FloorToInt((float)BeatActual);
  
-        // El while evita saltarse un beat si un frame tarda más de la cuenta
         while (ultimoBeat < beatEntero)
         {
             ultimoBeat++;

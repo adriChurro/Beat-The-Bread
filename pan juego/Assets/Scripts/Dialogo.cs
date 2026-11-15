@@ -40,8 +40,6 @@ public class Dialogo : MonoBehaviour
     {
         if (empezado) return;
 
-        // Se cambia Input.GetKeyDown(KeyCode.Space) por Input.GetMouseButtonDown(0)
-        // El 0 representa el clic izquierdo del ratón.
         if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             if (indice >= frases.Length)
@@ -68,13 +66,13 @@ public class Dialogo : MonoBehaviour
                 switch (frases[indice].Trim())
                 {
                     case "/PanBimbo":
-                        clic.direccion = DireccionCorte.Click; // Ejemplo
+                        clic.direccion = DireccionCorte.Click;
                         break;
                     case "/PanBarra":
-                        clic.direccion = DireccionCorte.Horizontal; // Ejemplo
+                        clic.direccion = DireccionCorte.Horizontal;
                         break;
                     case "/PanMolde":
-                        clic.direccion = DireccionCorte.Vertical; // Ejemplo
+                        clic.direccion = DireccionCorte.Vertical;
                         break;
                 }
 

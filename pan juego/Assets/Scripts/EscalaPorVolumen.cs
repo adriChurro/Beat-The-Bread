@@ -25,10 +25,8 @@ public class EscalaPorVolumen : MonoBehaviour
     {
         if (fuenteAudio == null || !fuenteAudio.isPlaying) return;
 
-        // 1. Obtener los datos de audio del frame actual (canal 0 = izquierdo o mono)
         fuenteAudio.GetOutputData(muestras, 0);
 
-        // 2. Calcular el volumen real (Root Mean Square - RMS)
         float suma = 0;
         for (int i = 0; i < muestras.Length; i++)
         {
@@ -36,7 +34,6 @@ public class EscalaPorVolumen : MonoBehaviour
         }
         float volumenRMS = Mathf.Sqrt(suma / muestras.Length);
 
-        // 3. Decidir la escala objetivo
         Vector3 escalaObjetivo = escalaBase;
 
         if (volumenRMS > umbralVolumen)
@@ -46,7 +43,6 @@ public class EscalaPorVolumen : MonoBehaviour
             escalaObjetivo = escalaBase + new Vector3(extra, extra, extra);
         }
 
-        // 4. Aplicar la escala suavemente (Lerp) para que no haya temblores bruscos
         transform.localScale = Vector3.Lerp(transform.localScale, escalaObjetivo, Time.deltaTime * velocidadSuavizado);
     }
 }

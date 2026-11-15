@@ -20,14 +20,14 @@ public class DemoCliente : MonoBehaviour
     public float offsetY = 4f;
 
     [Header("Ritmo")]
-    public int beatsPorCambio = 8;         // 2 compases de 4/4
+    public int beatsPorCambio = 8; //2 compases el del cliente y el del jugador
     public int beatsCuentaInicial = 4;
 
     [Header("Movimiento")]
-    public float distanciaFuera = 12f;     // cuánto se aleja hacia la derecha (fuera de cámara)
+    public float distanciaFuera = 12f;
     public float duracionSalida = 0.12f;
     public float duracionEntrada = 0.12f;
-    public bool entraPorIzquierda = false; // false: vuelve desde la derecha, true: aparece desde la izquierda
+    public bool entraPorIzquierda = false;
 
     [Header("Cambio de cliente")]
     public bool finalBoss = false;
@@ -38,13 +38,13 @@ public class DemoCliente : MonoBehaviour
     Vector3 posBase;
     GameObject actual;
 
+    //variables de mierda
     int siguiente;
     bool activo = true;
     int indiceSprite;
     bool cambiando;
     bool nivelTerminado;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         posBase = transform.position;
@@ -59,7 +59,6 @@ public class DemoCliente : MonoBehaviour
         StartCoroutine(Cambiar());
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(!activo) return;
@@ -128,10 +127,8 @@ public class DemoCliente : MonoBehaviour
         Vector3 derecha = posBase + Vector3.right * distanciaFuera;
         Vector3 izquierda = posBase + Vector3.left * distanciaFuera;
 
-        // 1. Sale rápido hacia la derecha (aceleración)
         yield return Mover(posBase, derecha, duracionSalida, true);
 
-        // 2. Cambia el sprite fuera de cámara
         if (clientes.Length > 0)
         {
             if (!finalBoss)
@@ -145,7 +142,6 @@ public class DemoCliente : MonoBehaviour
             }
             
         }
-        // 3. Vuelve al centro rápido (frenada)
         Vector3 origen = entraPorIzquierda ? izquierda : derecha;
         yield return Mover(origen, posBase, duracionEntrada, false);
 
