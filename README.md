@@ -38,7 +38,7 @@ Ey ey, no tan rápido, chaval. ¿Cómo pensabas jugar sin saber los controles?
 ## Jugar
 
 - **Navegador / descarga:** [página del juego en itch.io](https://itch.io/) <!-- pon aquí el enlace real -->
-- **Desde el código:** abre la carpeta del proyecto con Unity (versión `X.X.X`) y ejecuta la escena `Nivel1`.
+- **Desde el código:** abre la carpeta del proyecto con Unity (versión 6.6) y ejecuta la escena `Nivel1`.
 
 ## Créditos
 
